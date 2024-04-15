@@ -1,5 +1,5 @@
 import { CardMolicule } from "@/components/molecures";
-import styles from "@/components/styles/SolutionContent.module.css";
+import styles from "./styles/SolutionContent.module.css";
 import { AiOutlineIdcard } from "react-icons/ai";
 import { BsBank, BsBarChartLine, BsGlobeAmericas, BsWindowSplit } from "react-icons/bs";
 import { TfiLayoutMediaLeft } from "react-icons/tfi";
