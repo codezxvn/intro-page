@@ -1,0 +1,37 @@
+.info-container {
+  width: 1100px;
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.info-title {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.scroled-nav {
+  animation: showNav 150ms;
+}
+
+.unscroled-nav {
+  animation: hideNav 150ms;
+}
+
+@keyframes showNav {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes hideNav {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,24 @@
+.carousel-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #232429;
+  opacity: 0.2;
+  width: 100%;
+  z-index: 5;
+}
