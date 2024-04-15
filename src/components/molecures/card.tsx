@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import styles from "../styles/ProductCard.module.css";
+import styles from "./styles/ProductCard.module.css";
 
 export default function CardMolicule(title: string, iconAPI: IconType) {
   const Icon = iconAPI;
