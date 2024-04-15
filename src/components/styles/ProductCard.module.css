@@ -1,0 +1,69 @@
+.media {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background: #1a1a1a;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0px 2px 25px -16px rgba(0, 0, 0, 0.26);
+    ;
+}
+
+.media:hover .icon,
+.media:hover .heading {
+    color: black;
+}
+
+.media:hover {
+    background: #cdb30c;
+}
+
+.body {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15%;
+}
+
+.heading {
+    width: 100%;
+    color: white;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+   
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.iconContent {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10%;
+    max-width: 300px; 
+    max-height: 100px; 
+}
+
+.icon {
+    line-height: 1.3;
+    position: relative;
+    border-radius: 10%;
+    font-size: 50px;
+    color: #cdb30c;
+}
