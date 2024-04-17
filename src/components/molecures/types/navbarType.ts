@@ -3,11 +3,11 @@ import { IconType } from "react-icons";
 export type NavBarProps = {
   phone: string;
   email: string;
-  socialIcons: NavBarSocialIconType[];
+  socialIcons: SocialIconType[];
   navLinks: NavBarNavLinkType[];
 };
 
-export type NavBarSocialIconType = {
+export type SocialIconType = {
   icon: IconType;
   url: string;
 };
