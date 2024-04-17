@@ -49,7 +49,7 @@ export default function Header() {
 
   return (
     <>
-      <div className={`${styles.container} z-10`}>
+      <div className={`${styles.container} z-10 overflow-hidden`}>
         <NavBar {...navBarProps} />
       </div>
       <div className={`${styles["carousel-container"]} w-full h-full relative`}>
@@ -59,6 +59,7 @@ export default function Header() {
           alt="Temp"
           layout="fill"
           objectFit="cover"
+          className="bg-no-repeat"
         />
       </div>
     </>
