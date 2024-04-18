@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "CodeZX - Think more - code less",
   description: "Tech solution for you bussines",
-  icons: "./favicon.ico",
+  icons: "./images/favicon.ico",
 };
 
 export default function RootLayout({
