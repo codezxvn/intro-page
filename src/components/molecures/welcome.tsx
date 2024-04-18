@@ -2,7 +2,7 @@ import { WelComeProps } from "./types/welcomeType";
 import styles from "./styles/Welcome.module.css";
 export default function WelcomeMolicule({ heading, body }: WelComeProps) {
   return (
-    <div className={`grid pt-10 ${styles.fadeInFromBottom}`}>
+    <div className={`grid ml-6 pt-10 ${styles.fadeInFromBottom}`}>
       <span className={`uppercase font-bold text-sm text-neutral ${styles.title}`}>
         Welcome to {heading}
       </span>
