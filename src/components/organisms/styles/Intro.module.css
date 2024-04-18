@@ -1,0 +1,62 @@
+.carousel-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #232429;
+  opacity: 0.2;
+  width: 100%;
+  z-index: 5;
+}
+
+.intro-dot {
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  background: #fff;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.intro-dot-outline {
+  position: absolute;
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  /* background: #fff; */
+  border: #fff 2px solid;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.intro-dot:hover,
+.intro-dot:hover .intro-dot-outline,
+.intro-dot-active {
+  opacity: 1;
+}

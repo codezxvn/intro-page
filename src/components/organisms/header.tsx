@@ -1,11 +1,10 @@
-import Image from "next/image";
 import {
   FaDribbble,
   FaFacebookF,
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
-import { NavBar } from "../molecures";
+import { NavBarMolecure } from "../molecures";
 import { NavBarProps } from "../molecures/types/navbarType";
 import styles from "./styles/Header.module.css";
 
@@ -49,18 +48,8 @@ export default function Header() {
 
   return (
     <>
-      <div className={`${styles.container} z-10 overflow-hidden`}>
-        <NavBar {...navBarProps} />
-      </div>
-      <div className={`${styles["carousel-container"]} w-full h-full relative`}>
-        <div className={styles.overlay}></div>
-        <Image
-          src={"/images/header_bg.webp"}
-          alt="Temp"
-          layout="fill"
-          objectFit="cover"
-          className="bg-no-repeat"
-        />
+      <div className={`${styles.container} z-40 relative lg:absolute w-full`}>
+        <NavBarMolecure {...navBarProps} />
       </div>
     </>
   );

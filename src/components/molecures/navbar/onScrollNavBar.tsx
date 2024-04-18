@@ -3,10 +3,16 @@
 import { useState } from "react";
 import { useEventListener } from "usehooks-ts";
 import styles from "../styles/Navbar.module.css";
-import { OnScrollNavBarProps } from "../types/navbarType";
+import { NavLinksProps, OnScrollNavBarProps } from "../types/navbarType";
+import Nav from "./navBar";
 
 export default function OnScrollNavBar(props: OnScrollNavBarProps) {
   const [showSticky, setShowSticky] = useState(false);
+
+  const navLinksProps: NavLinksProps = {
+    showSticky,
+    navLinks: props.navLinks,
+  };
 
   const handleHideNavBar = () => {
     setShowSticky(false);
@@ -18,7 +24,7 @@ export default function OnScrollNavBar(props: OnScrollNavBarProps) {
       window.innerHeight || 0
     );
     if (window.scrollY > vh / 2) {
-      !showSticky && setShowSticky(true);
+      !showSticky && setShowSticky(!showSticky);
       return;
     }
 
@@ -27,50 +33,20 @@ export default function OnScrollNavBar(props: OnScrollNavBarProps) {
 
   useEventListener("scroll", handleOnScroll);
 
-  const Nav = () => (
-    <nav
-      className={`${
-        showSticky ? `bg-primary text-secondary` : `${styles.nav} text-primary `
-      } px-4 w-full flex justify-center items-center font-bold`}
-    >
-      <div
-        className={`${styles["info-container"]} flex items-center justify-between h-fit`}
-      >
-        <a
-          className={`${
-            showSticky ? "py-4" : "py-6"
-          } text-2xl leading-[1.8rem]`}
-          href="#"
-        >
-          CodeZX
-        </a>
-        <div>
-          {props.navLinks.map((item, i) => (
-            <a
-              key={`navLink-${i}`}
-              className={`text-[15px] ${showSticky ? "py-4" : "py-6"} px-5`}
-              href={item.url}
-            >
-              {item.content}
-            </a>
-          ))}
-        </div>
-      </div>
-    </nav>
-  );
-
   return (
     <>
-      <Nav />
+      <Nav navLinksProps={navLinksProps} />
       {showSticky ? (
-        <div className={`${styles["scroled-nav"]} w-full fixed`}>
-          <Nav />
+        <div
+          className={`${styles["scroled-nav"]} w-full fixed top-0 translate-y-0`}
+        >
+          <Nav navLinksProps={navLinksProps} />
         </div>
       ) : (
         <div
           className={`${styles["unscroled-nav"]} w-full fixed -translate-y-full`}
         >
-          <Nav />
+          <Nav navLinksProps={navLinksProps} />
         </div>
       )}
     </>

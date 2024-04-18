@@ -20,3 +20,12 @@ export type NavBarNavLinkType = {
 export type OnScrollNavBarProps = {
   navLinks: NavBarNavLinkType[];
 };
+
+export type NavLinksProps = {
+  showSticky: boolean;
+  navLinks: NavBarNavLinkType[];
+};
+
+export type NavProps = {
+  navLinksProps: NavLinksProps;
+};

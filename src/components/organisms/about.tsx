@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useIntersectionObserver } from "usehooks-ts";
 import { WelcomeMolicule } from "../molecures";
 import { WelComeProps } from "../molecures/types/welcomeType";
-import { useIntersectionObserver } from "usehooks-ts";
 export default function About() {
   const { isIntersecting, ref } = useIntersectionObserver({
     threshold: 0.5,
@@ -15,7 +15,7 @@ export default function About() {
   };
   return (
     <section className="relative w-full ml-5">
-      <div className="max-w-5xl mx-auto mt-4 pr-2">
+      <div className="max-w-screen-lg mx-auto mt-4 pr-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div>
             <Image
