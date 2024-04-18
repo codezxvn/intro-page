@@ -1,16 +1,16 @@
-import { ContentProps } from "../molecures/types/contentType";
-import { CompanyMolicule, ContentMoliCule } from "../molecures";
-import { SocialIconType } from "../molecures/types/navbarType";
+import Image from "next/image";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { CiMap } from "react-icons/ci";
 import {
   FaDribbble,
   FaFacebookF,
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
+import { CompanyMolicule, ContentMoliCule } from "../molecures";
 import { CompanyProps } from "../molecures/types/companyType";
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-import Image from "next/image";
-import { CiMap } from "react-icons/ci";
+import { ContentProps } from "../molecures/types/contentType";
+import { SocialIconType } from "../molecures/types/navbarType";
 export default function Footer() {
   const companyInfo: CompanyProps[] = [
     {
@@ -85,23 +85,32 @@ export default function Footer() {
 
   return (
     <footer className="bg-secondary">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-screen-lg p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex flex-col">
-            <a href="#" className="flex mb-5">
-            <Image
-              src="/images/logo.png"
-              width={500}
-              height={500}
-              alt="Picture of the author"/>
+            <a href="#" className="flex mb-5 items-end justify-start">
+              <div className="relative h-14 aspect-square">
+                <Image
+                  src="/logo-single.svg"
+                  alt="Picture of the author"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="flex flex-col h-full text-primary ml-3 justify-end">
+                <span className="text-4xl font-extrabold mb-1">CodeZX</span>
+                <span className="text-nowrap text-sm leading-none">
+                  Think more - code less
+                </span>
+              </div>
               <br />
             </a>
-            <div className="flex">
+            <div className="flex justify-between">
               {socialIcon.map((icon, i) => (
                 <a
                   href={icon.url}
                   key={`social-icon-${i}`}
-                  className="w-10 aspect-square mr-4 flex justify-center items-center font-bold text-sm text-primary bg-neutral rounded-3xl hover:animate-ping"
+                  className="w-10 aspect-square flex justify-center items-center font-bold text-sm text-primary bg-neutral rounded-3xl hover:animate-ping"
                 >
                   <icon.icon />
                 </a>

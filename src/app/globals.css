@@ -64,3 +64,8 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+.carousel .slide img {
+  max-height: 100vh;
+  width: auto; /*100vw*/
+}
