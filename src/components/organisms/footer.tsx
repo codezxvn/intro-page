@@ -9,20 +9,21 @@ import {
 } from "react-icons/fa";
 import { CompanyProps } from "../molecures/types/companyType";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-import { BsMap } from "react-icons/bs";
+import Image from "next/image";
+import { CiMap } from "react-icons/ci";
 export default function Footer() {
   const companyInfo: CompanyProps[] = [
     {
-      Icon: BsMap,
-      info: "203 Fake St. Mountain View, San Francisco, California, USA",
+      Icon: CiMap,
+      info: "Văn phòng 02, Tầng 08, Tòa nhà Pearl Plaza, số 561A Điện Biên Phủ, Phường 25, Quận Bình Thạnh, HCM",
     },
     {
       Icon: AiOutlinePhone,
-      info: "+84913501314",
+      info: "+84796409939",
     },
     {
       Icon: AiOutlineMail,
-      info: "quangnguyen16200@gmail.com",
+      info: "codezx24@gmail.com",
     },
   ];
 
@@ -88,9 +89,11 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex flex-col">
             <a href="#" className="flex mb-5">
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                CodeZX
-              </span>
+            <Image
+              src="/images/logo.png"
+              width={500}
+              height={500}
+              alt="Picture of the author"/>
               <br />
             </a>
             <div className="flex">
