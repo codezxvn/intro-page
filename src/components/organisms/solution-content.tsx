@@ -8,6 +8,7 @@ import { GiArtificialIntelligence, GiDigitalTrace } from "react-icons/gi";
 import Image from "next/image";
 import { CardProps } from "../molecures/types/solutionType";
 import { useIntersectionObserver } from "usehooks-ts";
+import { SlEarphonesAlt } from "react-icons/sl";
 
 export default function SolutionOrganisms() {
   const { isIntersecting, ref } = useIntersectionObserver({
@@ -24,19 +25,19 @@ export default function SolutionOrganisms() {
       iconAPI: BsBarChartLine,
     },
     {
-      title: "Application Development",
-      iconAPI: AiOutlineIdcard,
+      title: "VoIP Technology",
+      iconAPI: SlEarphonesAlt,
     },
     {
       title: "Web Development",
       iconAPI: BsWindowSplit,
     },
     {
-      title: "Machine Learning",
+      title: "Artificial Intelligence",
       iconAPI: GiArtificialIntelligence,
     },
     {
-      title: "Finance Technology",
+      title: "Financial Technology",
       iconAPI: BsBank,
     },
   ];
