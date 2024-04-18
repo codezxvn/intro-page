@@ -1,7 +1,3 @@
-.info-container {
-  width: 1100px;
-}
-
 .nav {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -16,6 +12,14 @@
 
 .unscroled-nav {
   animation: hideNav 150ms;
+}
+
+.showMenu {
+  animation: showMenu 150ms;
+}
+
+.hideMenu {
+  animation: hideMenu 150ms;
 }
 
 @keyframes showNav {
@@ -33,5 +37,27 @@
   }
   to {
     transform: translateY(-100%);
+  }
+}
+
+@keyframes showMenu {
+  from {
+    max-height: 0px;
+    padding-bottom: 0;
+  }
+  to {
+    max-height: 500px;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@keyframes hideMenu {
+  from {
+    max-height: 500px;
+    padding-bottom: 1.25rem;
+  }
+  to {
+    max-height: 0px;
+    padding-bottom: 0rem;
   }
 }

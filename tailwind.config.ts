@@ -9,6 +9,9 @@ const config: Config = {
         secondary: "#232429",
         neutral: "#cdb30c",
       },
+      screens: {
+        lg: "1082px",
+      },
     },
   },
   plugins: [],

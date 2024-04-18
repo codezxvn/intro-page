@@ -1,14 +1,13 @@
 "use client";
 
 import { CardMolicule } from "@/components/molecures";
-import styles from "./styles/SolutionContent.module.css";
-import { AiOutlineIdcard } from "react-icons/ai";
+import Image from "next/image";
 import { BsBank, BsBarChartLine, BsWindowSplit } from "react-icons/bs";
 import { GiArtificialIntelligence, GiDigitalTrace } from "react-icons/gi";
-import Image from "next/image";
-import { CardProps } from "../molecures/types/solutionType";
-import { useIntersectionObserver } from "usehooks-ts";
 import { SlEarphonesAlt } from "react-icons/sl";
+import { useIntersectionObserver } from "usehooks-ts";
+import { CardProps } from "../molecures/types/solutionType";
+import styles from "./styles/SolutionContent.module.css";
 
 export default function SolutionOrganisms() {
   const { isIntersecting, ref } = useIntersectionObserver({
@@ -43,7 +42,9 @@ export default function SolutionOrganisms() {
   ];
 
   return (
-    <section className={`${styles.section}`}>
+    <section
+      className={`${styles.section} flex flex-col items-center justify-center`}
+    >
       <Image
         src={"/images/background.png"}
         alt="Temp"
@@ -53,7 +54,7 @@ export default function SolutionOrganisms() {
       />
       <div ref={ref} className="w-full"></div>
       {isIntersecting && (
-        <div className={styles.container}>
+        <div className={`${styles.container} max-w-screen-lg px-4`}>
           <div className={`${styles["grid-container"]}`}>
             <div className={`${styles.quote}`}>
               <h2 className={styles.title}>
