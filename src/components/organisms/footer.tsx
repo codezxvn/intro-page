@@ -76,7 +76,7 @@ export default function Footer() {
           url: "#",
         },
         {
-          content: "Term & Condictions",
+          content: "Term & Conditions",
           url: "#",
         },
       ],
@@ -105,7 +105,7 @@ export default function Footer() {
               </div>
               <br />
             </a>
-            <div className="flex justify-between">
+            <div className="flex space-x-4">
               {socialIcon.map((icon, i) => (
                 <a
                   href={icon.url}
