@@ -28,7 +28,7 @@ export default function SolutionOrganisms() {
       iconAPI: SlEarphonesAlt,
     },
     {
-      title: "Web Development",
+      title: "Web-App Development",
       iconAPI: BsWindowSplit,
     },
     {
