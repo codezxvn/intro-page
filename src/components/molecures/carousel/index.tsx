@@ -10,6 +10,9 @@ export default function CarouselMolecure(props: CarouselMolecureProps) {
       <Carousel
         renderIndicator={props.renderIndicator}
         className="h-fit"
+        verticalSwipe="natural"
+        swipeScrollTolerance={50}
+        preventMovementUntilSwipeScrollTolerance
         autoPlay
         emulateTouch
         swipeable
@@ -17,6 +20,7 @@ export default function CarouselMolecure(props: CarouselMolecureProps) {
         infiniteLoop
         showArrows={false}
         showStatus={false}
+        stopOnHover
       >
         {props.children}
       </Carousel>
