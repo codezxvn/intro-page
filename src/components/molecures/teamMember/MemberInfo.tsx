@@ -32,7 +32,7 @@ export default function MemberInfo(info: TeamMemberProps) {
         <span className="mb-5 font-bold text-3xl w-fit sm:mx-0 mx-auto">
           {info.name}
         </span>
-        <span className="font-bold bg-secondary text-primary px-4 py-1 rounded-md">
+        <span className="font-bold bg-slate-600 text-primary px-4 py-1 rounded-md w-fit sm:w-full mx-auto[]]]]]]]]]]]]]]]]">
           {info.role}
         </span>
         <span className="w-full mt-4">{info.introduction}</span>
