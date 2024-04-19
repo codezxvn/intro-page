@@ -111,31 +111,7 @@ export default function Teams() {
       introduction:
         "Huong Bui, PhD. - Expert in data mining and machine learning. Huong Bui is an experienced educator and researcher in the field of Computer Science, with deep expertise in data mining and machine learning. He holds a PhD in Computer Science from the University of Information Technology, Vietnam National University, Ho Chi Minh City. He is currently head of the Data Science department of the Faculty of Information Technology, Hutech University, Ho Chi Minh City, Vietnam.",
     },
-    {
-      avatar: "",
-      name: "Vu Nguyen",
-      role: "DevOps Engineer",
-      socialIcons: [
-        {
-          url: "#",
-          icon: SocialPlatform.TWITTER,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.FACEBOOK,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.INSTAGRAM,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.LINKEDIN,
-        },
-      ],
-      introduction:
-        "Nguyễn Văn Vũ is a lead of DevOps. He has more than 10 years of experience working in software development. He has good experience in building the infrastructure for big systems, he has a lot of experience in optimizing resource systems and security as well.",
-    },
+    
     {
       avatar: "",
       name: "Ha Nguyen",
