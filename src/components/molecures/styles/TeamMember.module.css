@@ -1,0 +1,15 @@
+@keyframes show {
+  from {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.show {
+  animation: show 1500ms;
+}
