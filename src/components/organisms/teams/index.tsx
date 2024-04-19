@@ -112,7 +112,7 @@ export default function Teams() {
         "Huong Bui, PhD. - Expert in data mining and machine learning. Huong Bui is an experienced educator and researcher in the field of Computer Science, with deep expertise in data mining and machine learning. He holds a PhD in Computer Science from the University of Information Technology, Vietnam National University, Ho Chi Minh City. He is currently head of the Data Science department of the Faculty of Information Technology, Hutech University, Ho Chi Minh City, Vietnam.",
     },
     {
-      avatar: "/images/team_member_example.webp",
+      avatar: "",
       name: "Vu Nguyen",
       role: "DevOps Engineer",
       socialIcons: [
@@ -137,7 +137,7 @@ export default function Teams() {
         "Nguyễn Văn Vũ is a lead of DevOps. He has more than 10 years of experience working in software development. He has good experience in building the infrastructure for big systems, he has a lot of experience in optimizing resource systems and security as well.",
     },
     {
-      avatar: "/images/team_member_example.webp",
+      avatar: "",
       name: "Ha Nguyen",
       role: "Tech Lead",
       socialIcons: [
@@ -180,7 +180,7 @@ export default function Teams() {
           </div>
           <a
             href="#"
-            className="py-1 px-3 uppercase font-medium flex justify-center items-center group text-xs border-2 border-solid border-neutral text-neutral"
+            className="py-1 px-3 uppercase font-medium flex justify-center items-center group text-xs border-2 border-solid border-neutral text-neutral hidden"
           >
             <span className="text-nowrap">view all team members</span>
             <FaAngleRight className="group-hover:ml-2" />
