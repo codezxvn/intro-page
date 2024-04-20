@@ -1,4 +1,10 @@
-import { About, Footer, Header, Teams } from "@/components/organisms";
+import {
+  About,
+  Footer,
+  Header,
+  Portfolio,
+  Teams,
+} from "@/components/organisms";
 
 import { SolutionOrganisms } from "@/components/organisms";
 import Intro from "@/components/organisms/intro";
@@ -11,6 +17,7 @@ export default function Home() {
       <SolutionOrganisms />
       <About />
       <Teams />
+      <Portfolio />
       <Footer />
     </>
   );

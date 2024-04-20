@@ -2,12 +2,13 @@
 
 import { CardMolicule } from "@/components/molecures";
 import Image from "next/image";
-import { BsBank, BsBarChartLine, BsWindowSplit } from "react-icons/bs";
+import { BsBank, BsWindowSplit } from "react-icons/bs";
 import { GiArtificialIntelligence, GiDigitalTrace } from "react-icons/gi";
 import { SlEarphonesAlt } from "react-icons/sl";
 import { useIntersectionObserver } from "usehooks-ts";
 import { CardProps } from "../molecures/types/solutionType";
 import styles from "./styles/SolutionContent.module.css";
+import { MdOutlineMedicalInformation } from "react-icons/md";
 
 export default function SolutionOrganisms() {
   const { isIntersecting, ref } = useIntersectionObserver({
@@ -20,8 +21,8 @@ export default function SolutionOrganisms() {
       iconAPI: GiDigitalTrace,
     },
     {
-      title: "Online Marketing",
-      iconAPI: BsBarChartLine,
+      title: "Medical Technology",
+      iconAPI: MdOutlineMedicalInformation,
     },
     {
       title: "VoIP Technology",
