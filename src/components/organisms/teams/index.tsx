@@ -113,7 +113,7 @@ export default function Teams() {
     },
     
     {
-      avatar: "",
+      avatar: "/images/avatar/ha_nguyen.jpg",
       name: "Ha Nguyen",
       role: "Tech Lead",
       socialIcons: [
