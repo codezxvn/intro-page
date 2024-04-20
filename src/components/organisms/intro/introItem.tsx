@@ -8,8 +8,10 @@ export default function IntroItem(props: IntroItemProps) {
       <div className={styles.overlay}></div>
       <Image
         src={props.imageSrc}
+        blurDataURL={props.imageSrc}
         alt={props.title}
         fill
+        placeholder="blur"
         style={{ objectFit: "cover" }}
       />
       <div className="w-full max-w-[1050px] h-full z-10 m-auto">

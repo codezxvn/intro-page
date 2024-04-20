@@ -1,5 +1,6 @@
 import {
   About,
+  FAQ,
   Footer,
   Header,
   Portfolio,
@@ -16,8 +17,9 @@ export default function Home() {
       <Intro />
       <SolutionOrganisms />
       <About />
-      <Teams />
       <Portfolio />
+      <Teams />
+      <FAQ />
       <Footer />
     </>
   );

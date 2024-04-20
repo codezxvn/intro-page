@@ -7,39 +7,9 @@ export default function Intro() {
   const introItems: IntroItemProps[] = [
     {
       imageSrc: "/images/header_bg.webp",
-      statement: "Welcome to eroo",
+      statement: "Welcome to CodeZX",
       title: "Digital Innovation Company that Creates Solution",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    },
-    {
-      imageSrc: "/images/header_bg.webp",
-      statement: "Welcome to eroo",
-      title: "Digital Innovation Company that Creates Solution",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    },
-    {
-      imageSrc: "/images/header_bg.webp",
-      statement: "Welcome to eroo",
-      title: "Digital Innovation Company that Creates Solution",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    },
-    {
-      imageSrc: "/images/header_bg.webp",
-      statement: "Welcome to eroo",
-      title: "Digital Innovation Company that Creates Solution",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    },
-    {
-      imageSrc: "/images/header_bg.webp",
-      statement: "Welcome to eroo",
-      title: "Digital Innovation Company that Creates Solution",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    },
-    {
-      imageSrc: "/images/header_bg.webp",
-      statement: "Welcome to eroo",
-      title: "Digital Innovation Company that Creates Solution",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      desc: "We create technology advancement for your bussiness",
     },
   ];
 
