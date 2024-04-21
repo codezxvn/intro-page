@@ -1,6 +1,9 @@
 export { default as About } from "./about";
+export { default as FAQ } from "./faq";
 export { default as Footer } from "./footer";
 export { default as Header } from "./header";
+export { default as Intro } from "./intro";
+export { default as Partners } from "./partners";
+export { default as Portfolio } from "./portfolio";
 export { default as SolutionOrganisms } from "./solution-content";
 export { default as Teams } from "./teams";
-export { default as Portfolio } from "./portfolio";

@@ -1,24 +1,31 @@
+import { StickyBackground } from "@/components/molecures";
 import {
   About,
+  FAQ,
   Footer,
   Header,
+  Intro,
+  Partners,
   Portfolio,
+  SolutionOrganisms,
   Teams,
 } from "@/components/organisms";
-
-import { SolutionOrganisms } from "@/components/organisms";
-import Intro from "@/components/organisms/intro";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Intro />
-      <SolutionOrganisms />
-      <About />
-      <Teams />
-      <Portfolio />
-      <Footer />
+      <StickyBackground url="/images/stock_bg_2.jpg" />
+      <div className="z-10">
+        <Header />
+        <Intro />
+        <SolutionOrganisms />
+        <About />
+        <Portfolio />
+        <Teams />
+        <FAQ />
+        <Partners />
+        <Footer />
+      </div>
     </>
   );
 }
