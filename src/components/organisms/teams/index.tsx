@@ -111,7 +111,7 @@ export default function Teams() {
       introduction:
         "Huong Bui, PhD. - Expert in data mining and machine learning. Huong Bui is an experienced educator and researcher in the field of Computer Science, with deep expertise in data mining and machine learning. He holds a PhD in Computer Science from the University of Information Technology, Vietnam National University, Ho Chi Minh City. He is currently head of the Data Science department of the Faculty of Information Technology, Hutech University, Ho Chi Minh City, Vietnam.",
     },
-    
+
     {
       avatar: "/images/avatar/ha_nguyen.jpg",
       name: "Ha Nguyen",
@@ -140,7 +140,7 @@ export default function Teams() {
   ];
 
   return (
-    <section className="w-full py-[7em] flex justify-center px-4 lg:px-0">
+    <section className="w-full py-[7em] flex justify-center px-4 lg:px-0 overflow-hidden relative">
       <div className="max-w-screen-lg w-full flex flex-col items-end">
         <div className="w-full flex flex-col sm:flex-row justify-between items-start md:items-center pb-12">
           <div className="flex flex-col justify-center items-start lg:max-w-[50%] w-full">
@@ -163,7 +163,7 @@ export default function Teams() {
           </a>
         </div>
         {isIntersecting && (
-          <div className="w-full flex-wrap justify-center lg:flex-nowrap flex lg:w-11/12">
+          <div className="w-full flex-wrap justify-center lg:flex-nowrap relative flex gap-2">
             {teamMembers.map((item, i) => (
               <TeamMember key={item.name} {...item} index={i} />
             ))}
