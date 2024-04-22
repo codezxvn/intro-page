@@ -6,28 +6,28 @@ import { PortfolioProps } from "./types/portfolio";
 export default function Portfolio() {
   const portfolio: PortfolioProps[] = [
     {
-      projectType: "Web application",
-      projectName: "Interior Design",
+      projectType: "Digital Transformation",
+      projectName: "In-house Software",
       projectImageSrc: "/images/portfolio/project1.png",
     },
     {
-      projectType: "Web application",
-      projectName: "Interior Design",
+      projectType: "Voip",
+      projectName: "soft phone",
       projectImageSrc: "/images/portfolio/work-2.jpg",
     },
     {
       projectType: "Web application",
-      projectName: "Interior Design",
+      projectName: "Food Delivery",
       projectImageSrc: "/images/portfolio/work-3.jpg",
     },
     {
       projectType: "Web application",
-      projectName: "Interior Design",
+      projectName: "E-commerce",
       projectImageSrc: "/images/portfolio/work-4.jpg",
     },
     {
-      projectType: "Web application",
-      projectName: "Interior Design",
+      projectType: "Mobile Application",
+      projectName: "Trang bang Tourism",
       projectImageSrc: "/images/portfolio/work-5.jpg",
     },
     {
