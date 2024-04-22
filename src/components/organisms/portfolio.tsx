@@ -38,8 +38,8 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className={`relative w-full pl-5 ${styles.overlay} bg-primary`}>
-      <div className="absolute top-0 left-0 right-0 h-2/5 bg-gradient-to-b bg-secondary"></div>
+    <section className={`relative w-full pl-5 ${styles.overlay}`}>
+      <div className="absolute top-0 left-0 right-0 h-2/5 bg-gradient-to-b"></div>
 
       <div className="max-w-screen-lg mx-auto relative mt-10">
         <div className="flex mr-4 ml-4 justify-between pb-5 grid-cols-3 mb-10">
