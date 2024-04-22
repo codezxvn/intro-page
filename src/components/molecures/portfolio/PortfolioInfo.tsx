@@ -13,8 +13,8 @@ export default function PortfolioInfo({
         src={projectImageSrc}
         className="object-cover mb-4 bg-center"
         alt={projectName}
-        width={300}
-        height={300}
+        width={270}
+        height={400}
       />
       <div className={styles.text}>
         <span>{projectType}</span>
