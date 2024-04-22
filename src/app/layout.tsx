@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Tech solution for you bussines, we providing services with our cares for any of your business tech related needs.",
   icons: "./favicon.ico",
   verification: {
-    google: "MGMqyXIdYCBujOWe45OEPHnwbsE2SDbWxt29cewWsgg",
+    google: "rKE3kMaIb_WWBLz17HE3DcxyuHXDZAAJR-t5zbnnigI",
   },
   openGraph: {
     url: "codezx.vn",
