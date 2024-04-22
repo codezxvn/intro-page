@@ -21,7 +21,7 @@ export default function PortfolioInfo({
         <h3>{projectName}</h3>
         <a
           href="#"
-          className={`absolute rounded-3xl -bottom-5 w-10 h-10 right-10 text-xl bg-black items-center ${styles.btn}`}
+          className={`absolute rounded-3xl bottom-8 w-10 h-10 right-3 text-xl bg-black items-center ${styles.btn}`}
         >
           <IoIosArrowForward className=" text-neutral text-3xl" />
         </a>
