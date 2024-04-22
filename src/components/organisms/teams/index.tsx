@@ -140,7 +140,7 @@ export default function Teams() {
   ];
 
   return (
-    <section className="w-full py-[7em] flex justify-center px-4 lg:px-0 overflow-hidden relative">
+    <section className="w-full py-[7em] flex justify-center px-4 lg:px-0 overflow-hidden relative bg-primary">
       <div className="max-w-screen-lg w-full flex flex-col items-end">
         <div className="w-full flex flex-col sm:flex-row justify-between items-start md:items-center pb-12">
           <div className="flex flex-col justify-center items-start lg:max-w-[50%] w-full">

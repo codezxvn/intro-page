@@ -10,13 +10,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://acme.com"),
-  title: "CodeZX - Think more - code less",
+  title: "CodeZX - Digital Transform Solution",
   description:
     "Tech solution for you bussines, we providing services with our cares for any of your business tech related needs.",
   icons: "./favicon.ico",
   openGraph: {
     url: "codezx.vn",
-    title: "CodeZX - Think more - code less",
+    title: "CodeZX - Digital Transform Solution",
     description:
       "Tech solution for you bussines, we providing services with our cares for any of your business tech related needs.",
     images: {
