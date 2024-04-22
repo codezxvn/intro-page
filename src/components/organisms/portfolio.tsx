@@ -28,7 +28,7 @@ export default function Portfolio() {
     {
       projectType: "Web application",
       projectName: "Interior Design",
-      projectImageSrc: "/images/portfolio/work-2.jpg",
+      projectImageSrc: "/images/portfolio/work-5.jpg",
     },
     {
       projectType: "Web application",
