@@ -13,9 +13,9 @@ export default function Flipbook(props: FlipbookProps) {
   };
 
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col duration-1000">
       {props.content.map((item, i) => (
-        <div key={item.title} className="w-full flex flex-col">
+        <div key={item.title} className="group w-full flex flex-col">
           <button
             className="bg-neutral mb-3 flex justify-between items-center px-6 py-3 rounded font-bold text-sm"
             onClick={() => handleOnClickTitle(i)}

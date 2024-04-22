@@ -53,8 +53,8 @@ export default function TeamMember(props: TeamMemberProps) {
                 />
               </div>
             </div>
-            <div className="pb-6 pt-2 lg:pt-4 bg-secondary lg:bg-transparent lg:p-0 absolute bottom-0 lg:h-4/6 flex flex-col w-full justify-center items-center text-primary uppercase z-10 lg:opacity-0 lg:lg:group-hover:bg-secondary lg:group-hover:opacity-100">
-              <span className="font-bold">{props.name}</span>
+            <div className="pb-6 pt-2 lg:pt-4 bg-neutral lg:bg-transparent lg:p-0 absolute bottom-0 lg:h-4/6 flex flex-col w-full justify-center items-center text-primary uppercase z-10 lg:opacity-0 lg:lg:group-hover:bg-neutral lg:group-hover:opacity-100">
+              <span className="font-bold text-secondary">{props.name}</span>
               <span className="lg:mb-1 text-xs">{props.role}</span>
               <span className="opacity-0 translate-y-16 duration-150 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 relative bottom-0 normal-case text-xs lg:mt-2 h-0 lg:h-fit max-h-16 px-4 text-justify line-clamp-3">
                 {props.introduction}

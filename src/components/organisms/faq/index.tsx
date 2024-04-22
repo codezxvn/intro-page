@@ -1,4 +1,4 @@
-import { Flipbook } from "@/components/molecures";
+import { Flipbook, QuestionForm } from "@/components/molecures";
 import { FlipbookProps } from "@/components/molecures/types/flipbookType";
 import Image from "next/image";
 import Answer from "./answer";
@@ -47,7 +47,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="FAQ w-full my-4 pt-12 pb-10 flex justify-center items-center bg-secondary text-primary">
+    <section className="FAQ w-full my-4 pt-12 pb-10 flex justify-center items-center text-primary">
       <div className="w-full max-w-screen-lg flex flex-col justify-center items-center px-4 lg:px-0">
         <div className="w-full flex gap-5 flex-col-reverse md:flex-row">
           <div className="w-full md:w-1/2 flex flex-col justify-start items-start">
@@ -68,11 +68,12 @@ export default function FAQ() {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <h2 className="text-2xl md:text-4xl mb-12 mt-8 font-bold leading-normal uppercase">
-              We are looking forward to anwser your question.
-            </h2>
           </div>
         </div>
+        <h2 className="text-2xl md:text-4xl mb-12 mt-8 font-bold leading-normal uppercase">
+          Do not find your question? Send it to us
+        </h2>
+        <QuestionForm />
       </div>
     </section>
   );
