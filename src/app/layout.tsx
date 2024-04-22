@@ -9,11 +9,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://acme.com"),
+  metadataBase: new URL("https://codezx.vn"),
   title: "CodeZX - Digital Transform Solution",
   description:
     "Tech solution for you bussines, we providing services with our cares for any of your business tech related needs.",
   icons: "./favicon.ico",
+  verification: {
+    google: "MGMqyXIdYCBujOWe45OEPHnwbsE2SDbWxt29cewWsgg",
+  },
   openGraph: {
     url: "codezx.vn",
     title: "CodeZX - Digital Transform Solution",
