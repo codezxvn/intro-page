@@ -46,13 +46,6 @@ export default function SolutionOrganisms() {
     <section
       className={`${styles.section} flex flex-col items-center justify-center`}
     >
-      <Image
-        src={"/images/background.png"}
-        alt="Temp"
-        layout="fill"
-        objectFit="cover"
-        className="z-[-1]"
-      />
       <div ref={ref} className="w-full"></div>
       {isIntersecting && (
         <div className={`${styles.container} max-w-screen-lg px-4`}>
