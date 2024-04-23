@@ -22,7 +22,7 @@ export default function IntroItem(props: IntroItemProps) {
               {props.title}
             </h1>
             <p className="mb-6">{props.desc}</p>
-            <div className="uppercase font-bold text-sm gap-1 flex">
+            {/* <div className="uppercase font-bold text-sm gap-1 flex">
               <a className="px-5 py-3 rounded bg-neutral text-primary" href="#">
                 get started
               </a>
@@ -32,7 +32,7 @@ export default function IntroItem(props: IntroItemProps) {
               >
                 view portfolio
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
