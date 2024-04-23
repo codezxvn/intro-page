@@ -49,7 +49,7 @@ export default function Portfolio() {
               We have done <br /> many latest projects
             </h2>
           </div>
-          <div className={`col-span-1`}>
+          {/* <div className={`col-span-1`}>
             <div className={`${styles.btn}`}>
               <a
                 href="#"
@@ -59,7 +59,7 @@ export default function Portfolio() {
                 <IoIosArrowForward className="ml-1 mt-0.5 flex flex-wrap text-neutral text-xs" />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-row mr-4 ml-12 flex-wrap">
           {portfolio.map((item) => (
