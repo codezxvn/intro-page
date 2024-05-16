@@ -1,5 +1,4 @@
 "use client";
-import { IoIosArrowForward } from "react-icons/io";
 import { PortfolioInfo } from "../molecures";
 import styles from "./styles/Portfolio.module.css";
 import { PortfolioProps } from "./types/portfolio";
@@ -9,31 +8,41 @@ export default function Portfolio() {
       projectType: "Digital Transformation",
       projectName: "In-house Software",
       projectImageSrc: "/images/portfolio/project1.png",
+      projectDescription:
+        "The digital transformation project at XYZ Corporation aims to enhance customer service by implementing a new CRM system, AI-powered chatbots, and data analytics. This initiative seeks to improve customer satisfaction, streamline operations, and provide data-driven insights for personalized experiences and strategic decision-making",
     },
     {
       projectType: "Voip",
       projectName: "soft phone",
       projectImageSrc: "/images/portfolio/work-2.jpg",
+      projectDescription: "Voip Project",
     },
     {
       projectType: "Web application",
       projectName: "Food Delivery",
       projectImageSrc: "/images/portfolio/work-3.jpg",
+      projectDescription:
+        " The app will provide a user-friendly platform for customers to browse menus, place orders, and track deliveries in real-time. Key features include secure payment options, customer reviews, and personalized recommendations. This initiative aims to enhance the customer experience, streamline the ordering process, and increase overall satisfaction and convenience.",
     },
     {
       projectType: "Web application",
       projectName: "E-commerce",
       projectImageSrc: "/images/portfolio/work-4.jpg",
+      projectDescription: "E commerce",
     },
     {
       projectType: "Mobile Application",
-      projectName: "Trang bang Tourism",
+      projectName: "Trang Bang Tourism",
       projectImageSrc: "/images/portfolio/work-5.jpg",
+      projectDescription:
+        "CodeZX Corporation's digital transformation project involves developing a mobile tourism app to introduce and promote Trang Bang's attractions. The app will feature comprehensive guides, interactive maps, event calendars, and personalized itineraries to enhance the tourist experience. This initiative aims to provide visitors with a convenient, engaging platform to explore and enjoy the best of Trang Bang, ultimately boosting local tourism.",
     },
     {
       projectType: "Web application",
-      projectName: "Interior Design",
+      projectName: "Coffee Shop",
       projectImageSrc: "/images/portfolio/work-6.jpg",
+      projectDescription:
+        "XYZ Coffee Shop is undertaking a digital transformation project to develop an eCommerce web application. This platform will enable customers to order coffee and other products online, customize their orders, and choose delivery or pickup options. Key features include a user-friendly interface, secure payments, loyalty program integration, and real-time order tracking. The goal is to enhance customer convenience, streamline operations, and boost online sales.",
     },
   ];
 
@@ -49,17 +58,6 @@ export default function Portfolio() {
               We have done <br /> many latest projects
             </h2>
           </div>
-          {/* <div className={`col-span-1`}>
-            <div className={`${styles.btn}`}>
-              <a
-                href="#"
-                className={`flex uppercase font-bold text-xs tracking-wide text-neutral`}
-              >
-                View All Projects
-                <IoIosArrowForward className="ml-1 mt-0.5 flex flex-wrap text-neutral text-xs" />
-              </a>
-            </div>
-          </div> */}
         </div>
         <div className="flex flex-row mr-4 ml-12 flex-wrap">
           {portfolio.map((item) => (
