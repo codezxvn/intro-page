@@ -185,7 +185,7 @@ export default function Teams() {
         },
       ],
       introduction:
-        "Mai Dai Lam is a skilled Software Engineer, specializing in PostgreSQL, Docker, and Kafka. Lam earned a Bachelor's Degree from the University of Information Technology and has developed a strong proficiency in creating efficient and scalable software solutions. With expertise in Ruby, Java, and React, as well as a diverse background in web development, mobile applications, AI/ML, and low-level programming, Lam is adept at working with a variety of programming languages and technologies to set up and maintain large-scale systems."
+        "Mai Dai Lam is a skilled Software Engineer with 1.5 years of experience, specializing in PostgreSQL, Docker, and Kafka. Lam earned a Bachelor's Degree from the University of Information Technology and has developed a strong proficiency in creating efficient and scalable software solutions. With expertise in Ruby, Java, and React, as well as a diverse background in web development, mobile applications, AI/ML, and low-level programming, Lam is adept at working with a variety of programming languages and technologies to set up and maintain large-scale systems."
     },
   ];
 
