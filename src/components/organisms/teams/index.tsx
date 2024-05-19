@@ -12,56 +12,6 @@ export default function Teams() {
   });
   const teamMembers: TeamMemberProps[] = [
     {
-      avatar: "/images/avatar/cuong_pham.jpg",
-      name: "Cuong Pham",
-      role: "Software Engineer",
-      socialIcons: [
-        {
-          url: "#",
-          icon: SocialPlatform.TWITTER,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.FACEBOOK,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.INSTAGRAM,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.LINKEDIN,
-        },
-      ],
-      introduction:
-        "Pham Quoc Cuong is currently working as a Software Engineer. He earned his Bachelor's Degree from Virginia Institute and State University and had two years of experience as a Software Developer. With proficiency in technologies like Spring Boot, Angular, Oracle SQL, Kafka, and Docker, Cuong possesses a strong skill set for developing efficient and scalable software solutions.",
-    },
-    {
-      avatar: "/images/avatar/quang_nguyen.JPEG",
-      name: "Quang Nguyen",
-      role: "Sofware Engineer",
-      socialIcons: [
-        {
-          url: "#",
-          icon: SocialPlatform.TWITTER,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.FACEBOOK,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.INSTAGRAM,
-        },
-        {
-          url: "#",
-          icon: SocialPlatform.LINKEDIN,
-        },
-      ],
-      introduction:
-        "Quang is a Software Engineer who has always been fascinated. He has expericenes in woking with varieties of programing languages from Web development to Mobile, AI/ML, crypto and also low level programing. He has always been proficient with developing and setting up large scale system like Docker, Kubernetes,...",
-    },
-    {
       avatar: "/images/avatar/john_le.jpg",
       name: "John Le, PhD.",
       role: "R&D",
@@ -137,6 +87,106 @@ export default function Teams() {
       introduction:
         "Nguyễn Mạnh Hà is a head of software developer. He has more than 15 years of experience working in software development. He works in the sectors VoIP, Banking, Ecommerce, Insurance,...",
     },
+    {
+      avatar: "/images/avatar/cuong_pham.jpg",
+      name: "Cuong Pham",
+      role: "Software Engineer",
+      socialIcons: [
+        {
+          url: "#",
+          icon: SocialPlatform.TWITTER,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.FACEBOOK,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.INSTAGRAM,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.LINKEDIN,
+        },
+      ],
+      introduction:
+        "Pham Quoc Cuong is currently working as a Software Engineer. He earned his Bachelor's Degree from Virginia Institute and State University and had two years of experience as a Software Developer. With proficiency in technologies like Spring Boot, Angular, Oracle SQL, Kafka, and Docker, Cuong possesses a strong skill set for developing efficient and scalable software solutions.",
+    },
+    {
+      avatar: "/images/avatar/quang_nguyen.JPEG",
+      name: "Quang Nguyen",
+      role: "Sofware Engineer",
+      socialIcons: [
+        {
+          url: "#",
+          icon: SocialPlatform.TWITTER,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.FACEBOOK,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.INSTAGRAM,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.LINKEDIN,
+        },
+      ],
+      introduction:
+        "Quang is a Software Engineer who has always been fascinated. He has expericenes in woking with varieties of programing languages from Web development to Mobile, AI/ML, crypto and also low level programing. He has always been proficient with developing and setting up large scale system like Docker, Kubernetes,...",
+    },
+    {
+      avatar: "/images/avatar/an_pham.webp",
+      name: "An Pham",
+      role: "Business Analyst",
+      socialIcons: [
+        {
+          url: "#",
+          icon: SocialPlatform.TWITTER,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.FACEBOOK,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.INSTAGRAM,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.LINKEDIN,
+        },
+      ],
+      introduction:
+        "An Pham is an experienced Analyst with 3 years of experience working at a Fortune 100 Company, a major semiconductor manufacturer and multiple startups. He co-founded a pre-seed web3 startup and had traditional training in Computer Science at West Texas A&M University and Carnegie Mellon University. His expertise lies in Business Analytics, Data Analytics and Product Management.",
+    },
+    {
+      avatar: "/images/avatar/lam_mai.jpg",
+      name: "Lam Mai",
+      role: "Software Engineer",
+      socialIcons: [
+        {
+          url: "#",
+          icon: SocialPlatform.TWITTER,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.FACEBOOK,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.INSTAGRAM,
+        },
+        {
+          url: "#",
+          icon: SocialPlatform.LINKEDIN,
+        },
+      ],
+      introduction:
+        "Mai Dai Lam is a skilled Software Engineer, specializing in PostgreSQL, Docker, and Kafka. Lam earned a Bachelor's Degree from the University of Information Technology and has developed a strong proficiency in creating efficient and scalable software solutions. With expertise in Ruby, Java, and React, as well as a diverse background in web development, mobile applications, AI/ML, and low-level programming, Lam is adept at working with a variety of programming languages and technologies to set up and maintain large-scale systems."
+    },
   ];
 
   return (
@@ -163,7 +213,7 @@ export default function Teams() {
           </a>
         </div>
         {isIntersecting && (
-          <div className="w-full flex-wrap justify-center lg:flex-nowrap relative flex gap-2">
+          <div className="w-full flex-wrap justify-center lg:grid lg:grid-cols-4 relative flex gap-2">
             {teamMembers.map((item, i) => (
               <TeamMember key={item.name} {...item} index={i} />
             ))}
