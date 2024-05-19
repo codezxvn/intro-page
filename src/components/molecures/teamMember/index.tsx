@@ -37,7 +37,7 @@ export default function TeamMember(props: TeamMemberProps) {
 
   return (
     <div
-      className={`sm:w-1/3 w-full lg:aspect-[5/7] aspect-square relative bg-p mb-8 drop-shadow-lg lg:hover:-translate-y-4 lg:hover:scale-125 lg:hover:z-20 lg:last-of-type:hover:-translate-x-[10%] lg:first-of-type:hover:translate-x-[10%] cursor-pointer`}
+      className={`sm:w-1/3 w-full lg:w-full lg:aspect-[5/7] aspect-square relative bg-p mb-8 drop-shadow-lg lg:hover:-translate-y-4 lg:hover:scale-125 lg:hover:z-20 lg:last-of-type:hover:-translate-x-[10%] lg:first-of-type:hover:translate-x-[10%] cursor-pointer`}
       onClick={handleOpenModal}
     >
       {show && (
@@ -51,6 +51,9 @@ export default function TeamMember(props: TeamMemberProps) {
                   alt={props.name}
                   className="object-cover"
                 />
+              </div>
+              <div className="absolute w-full bottom-0 flex justify-center items-center lg:mb-3 animate-bounce">
+                <IoIosArrowDown fill='white' />
               </div>
             </div>
             <div className="pb-6 pt-2 lg:pt-4 bg-neutral lg:bg-transparent lg:p-0 absolute bottom-0 lg:h-4/6 flex flex-col w-full justify-center items-center text-primary uppercase z-10 lg:opacity-0 lg:lg:group-hover:bg-neutral lg:group-hover:opacity-100">
