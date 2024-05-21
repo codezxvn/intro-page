@@ -1,9 +1,7 @@
 .wrap {
-    position: relative;
-    height: 340px;
+    height: 350px;
     border-radius: 4px;
     margin-bottom: 30px;
-    overflow: hidden;
 }
 
 .wrap:hover .text {

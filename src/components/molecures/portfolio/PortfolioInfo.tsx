@@ -29,9 +29,9 @@ export default function PortfolioInfo(props: PortfolioProps) {
   };
 
   return (
-    <div onClick={handleOpenModal}>
+    <div onClick={handleOpenModal} className="cursor-pointer">
       {show && (
-        <div className={`relative h-75 w-75 overflow-hidden ${styles.wrap}`}>
+        <div className={`relative overflow-hidden ${styles.wrap}`}>
           <Image
             src={props.projectImageSrc}
             className="object-cover mb-4 bg-center"

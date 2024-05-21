@@ -7,15 +7,16 @@ export default function Portfolio() {
     {
       projectType: "Digital Transformation",
       projectName: "In-house Software",
-      projectImageSrc: "/images/portfolio/project1.png",
+      projectImageSrc: "/images/portfolio/workflow.png",
       projectDescription:
-        "The digital transformation project at XYZ Corporation aims to enhance customer service by implementing a new CRM system, AI-powered chatbots, and data analytics. This initiative seeks to improve customer satisfaction, streamline operations, and provide data-driven insights for personalized experiences and strategic decision-making",
+        "The digital transformation project at CodeZX Corporation aims to enhance customer service by implementing a new CRM system, AI-powered chatbots, and data analytics. This initiative seeks to improve customer satisfaction, streamline operations, and provide data-driven insights for personalized experiences and strategic decision-making",
     },
     {
       projectType: "Voip",
-      projectName: "soft phone",
-      projectImageSrc: "/images/portfolio/work-2.jpg",
-      projectDescription: "Voip Project",
+      projectName: "Soft Phone",
+      projectImageSrc: "/images/portfolio/voip.png",
+      projectDescription:
+        "At CodeZX, we are dedicated to delivering exceptional VoIP and WebRTC communication solutions tailored to the unique needs of your business. Our team brings a wealth of experience and deep expertise in this domain, ensuring that your communication infrastructure is not only robust but also future-proof",
     },
     {
       projectType: "Web application",
@@ -26,14 +27,15 @@ export default function Portfolio() {
     },
     {
       projectType: "Web application",
-      projectName: "E-commerce",
-      projectImageSrc: "/images/portfolio/work-4.jpg",
-      projectDescription: "E commerce",
+      projectName: "Blockchain",
+      projectImageSrc: "/images/portfolio/blockchain.png",
+      projectDescription:
+        "At CodeZX, we are pioneering the digital fashion industry. Our platform empowers users to create their own metaclosets filled with digital fashion pieces. These unique items can be worn by avatars in Decentraland and other metaverses, displayed as metalooks on your 2D pictures for social media, and used as AR filters in Google Meet and Zoom calls. Join us in revolutionizing the way we experience fashion in the digital world.",
     },
     {
       projectType: "Mobile Application",
       projectName: "Trang Bang Tourism",
-      projectImageSrc: "/images/portfolio/work-5.jpg",
+      projectImageSrc: "/images/portfolio/tourism_app.png",
       projectDescription:
         "CodeZX Corporation's digital transformation project involves developing a mobile tourism app to introduce and promote Trang Bang's attractions. The app will feature comprehensive guides, interactive maps, event calendars, and personalized itineraries to enhance the tourist experience. This initiative aims to provide visitors with a convenient, engaging platform to explore and enjoy the best of Trang Bang, ultimately boosting local tourism.",
     },
@@ -42,7 +44,7 @@ export default function Portfolio() {
       projectName: "Coffee Shop",
       projectImageSrc: "/images/portfolio/work-6.jpg",
       projectDescription:
-        "XYZ Coffee Shop is undertaking a digital transformation project to develop an eCommerce web application. This platform will enable customers to order coffee and other products online, customize their orders, and choose delivery or pickup options. Key features include a user-friendly interface, secure payments, loyalty program integration, and real-time order tracking. The goal is to enhance customer convenience, streamline operations, and boost online sales.",
+        "CodeZX develop a platform that allows customers to order coffee and other products online, with options for customization and either delivery or pickup. The platform will feature a user-friendly interface, secure payment processing, integration with a loyalty program, and real-time order tracking. The main goals are to enhance customer convenience, streamline operations, and boost online sales.",
     },
   ];
 
