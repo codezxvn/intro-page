@@ -1,31 +1,50 @@
+"use client";
+
 import { PortfolioProps } from "@/components/organisms/types/portfolio";
 import Image from "next/image";
 import styles from "../styles/PortfolioInfo.module.css";
-import { IoIosArrowForward } from "react-icons/io";
-export default function PortfolioInfo({
-  projectName,
-  projectType,
-  projectImageSrc,
-}: PortfolioProps) {
+import { useState } from "react";
+import { useMeaningfulContext } from "@/hooks";
+import ModalContext from "@/components/contexts/modalContext";
+import { useTimeout } from "usehooks-ts";
+import PortfolioCard from "./PortfolioCard";
+export default function PortfolioInfo(props: PortfolioProps) {
+  const [show, setshow] = useState(false);
+  const { setContent, setShow: setShowModal } =
+    useMeaningfulContext(ModalContext);
+
+  useTimeout(
+    () => {
+      setshow(true);
+    },
+    props.index !== undefined ? (props.index + 5) * 50 : 0
+  );
+
+  const handleOpenModal = () => {
+    setShowModal();
+    setContent({
+      child: <PortfolioCard {...props} />,
+      title: "Portfolio Info",
+    });
+  };
+
   return (
-    <div className={`relative h-75 w-75 overflow-hidden ${styles.wrap}`}>
-      <Image
-        src={projectImageSrc}
-        className="object-cover mb-4 bg-center"
-        alt={projectName}
-        width={270}
-        height={400}
-      />
-      <div className={styles.text}>
-        <span>{projectType}</span>
-        <h3>{projectName}</h3>
-        <a
-          href="#"
-          className={`absolute rounded-3xl bottom-8 w-10 h-10 right-3 text-xl bg-black items-center ${styles.btn}`}
-        >
-          <IoIosArrowForward className=" text-neutral text-3xl" />
-        </a>
-      </div>
+    <div onClick={handleOpenModal} className="cursor-pointer">
+      {show && (
+        <div className={`relative overflow-hidden ${styles.wrap}`}>
+          <Image
+            src={props.projectImageSrc}
+            className="object-cover mb-4 bg-center"
+            alt={props.projectName}
+            width={270}
+            height={400}
+          />
+          <div className={styles.text}>
+            <span>{props.projectType}</span>
+            <h3>{props.projectName}</h3>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
