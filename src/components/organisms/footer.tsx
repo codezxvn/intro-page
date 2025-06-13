@@ -138,7 +138,7 @@ export default function Footer() {
             <a href="#" className="hover:underline">
               CodeZX
             </a>
-            . All rights reserved
+            . All rights reserved.
           </span>
         </div>
       </div>
