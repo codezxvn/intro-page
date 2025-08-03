@@ -1,7 +1,7 @@
 import React from "react";
 
 export type CarouselMolecureProps = {
-  children: React.ReactChild[];
+  children: (React.ReactElement<any> | number | string)[];
   renderIndicator?: (
     clickHandler: (e: React.MouseEvent | React.KeyboardEvent) => void,
     isSelected: boolean,
