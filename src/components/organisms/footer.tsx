@@ -15,7 +15,7 @@ export default function Footer() {
   const companyInfo: CompanyProps[] = [
     {
       Icon: CiMap,
-      info: "Văn phòng 02, Tầng 09, Tòa nhà Pearl Plaza, số 561A Điện Biên Phủ, Phường 25, Quận Bình Thạnh, HCM",
+      info: "Văn phòng 01, Tầng 09, Tòa nhà Pearl Plaza, 561A Điện Biên Phủ, Phường Thạnh Mỹ Tây, TP Hồ Chí Minh",
     },
     {
       Icon: AiOutlinePhone,
