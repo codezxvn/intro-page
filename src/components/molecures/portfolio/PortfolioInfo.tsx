@@ -1,12 +1,12 @@
 "use client";
 
-import { PortfolioProps } from "@/components/organisms/types/portfolio";
-import Image from "next/image";
-import styles from "../styles/PortfolioInfo.module.css";
-import { useState } from "react";
-import { useMeaningfulContext } from "@/hooks";
 import ModalContext from "@/components/contexts/modalContext";
+import { PortfolioProps } from "@/components/organisms/types/portfolio";
+import { useMeaningfulContext } from "@/hooks";
+import Image from "next/image";
+import { useState } from "react";
 import { useTimeout } from "usehooks-ts";
+import styles from "../styles/PortfolioInfo.module.css";
 import PortfolioCard from "./PortfolioCard";
 export default function PortfolioInfo(props: PortfolioProps) {
   const [show, setshow] = useState(false);

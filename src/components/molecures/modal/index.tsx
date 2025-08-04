@@ -2,12 +2,12 @@
 
 import ModalContext from "@/components/contexts/modalContext";
 import { useMeaningfulContext } from "@/hooks";
-import { useRef } from "react";
+import { RefObject, useRef } from "react";
 import { IoMdClose } from "react-icons/io";
 import { useOnClickOutside } from "usehooks-ts";
 
 export default function Modal() {
-  const modalContainerRef = useRef(null);
+  const modalContainerRef = useRef<HTMLDivElement>(null);
 
   const modalContent = useMeaningfulContext(ModalContext);
 
@@ -15,13 +15,12 @@ export default function Modal() {
     modalContent.setHide();
   };
 
-  useOnClickOutside(modalContainerRef, handleClickOutside);
+  useOnClickOutside(modalContainerRef as RefObject<HTMLDivElement>, handleClickOutside);
 
   return (
     <div
-      className={`${
-        modalContent.show ? "scale-100" : "scale-0"
-      } w-screen h-screen fixed top-0 bg-secondary/40  left-0 z-[999999999] flex justify-center items-center`}
+      className={`${modalContent.show ? "scale-100" : "scale-0"
+        } w-screen h-screen fixed top-0 bg-secondary/40  left-0 z-[999999999] flex justify-center items-center`}
     >
       <div
         ref={modalContainerRef}
