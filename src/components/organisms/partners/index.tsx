@@ -12,13 +12,14 @@ export default function Partners() {
         <h2 className="text-2xl md:text-4xl mb-6 font-bold leading-normal uppercase">Partners & Clients</h2>
         <div className="w-full grid sm:grid-cols-2 grid-cols-1 gap-4 mt-2">
           {images.map((item) => (
-            <div key={item} className="glass rounded-xl h-24 sm:h-28 flex items-center justify-center p-4 hover:bg-white/20 transition-colors">
+            <div key={item} className="glass rounded-xl h-24 sm:h-28 relative flex items-center justify-center p-4 hover:bg-white/10 transition-colors">
+              <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-black/10 to-transparent rounded-xl" />
               <div className="relative w-full h-full">
                 <Image
                   src={item}
                   alt={`partner-${item}`}
                   fill
-                  className="object-contain opacity-80 grayscale hover:opacity-100 hover:grayscale-0 transition"
+                  className="object-contain drop-shadow-md"
                 />
               </div>
             </div>
