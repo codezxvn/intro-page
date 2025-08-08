@@ -1,21 +1,27 @@
 .btn {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 1px;
-    border: 2px solid #cdb30c;
-    padding: 3px 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border: 2px solid #cdb30c;
+  padding: 3px 10px;
 }
 
 .overlay {
-    padding: 7em 0;
+  padding: 7em 0;
 }
 
 @media (min-width: 768px) {
-    .column {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
+  .column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .overlay {
+    padding: 3.5em 0;
+  }
 }

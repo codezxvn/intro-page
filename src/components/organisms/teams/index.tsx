@@ -206,14 +206,14 @@ export default function Teams() {
           </div>
           <a
             href="#"
-            className="py-1 px-3 uppercase font-medium flex justify-center items-center group text-xs border-2 border-solid border-neutral text-neutral hidden"
+            className="py-1 px-3 uppercase font-medium hidden md:flex justify-center items-center group text-xs border-2 border-solid border-neutral text-neutral"
           >
             <span className="text-nowrap">view all team members</span>
             <FaAngleRight className="group-hover:ml-2" />
           </a>
         </div>
         {isIntersecting && (
-          <div className="w-full flex-wrap justify-center lg:grid lg:grid-cols-4 relative flex gap-2">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {teamMembers.map((item, i) => (
               <TeamMember key={item.name} {...item} index={i} />
             ))}

@@ -13,18 +13,16 @@ type Props = {
 const NavLinks = (props: Props) => {
   return (
     <div
-      className={`lg:hidden font-normal overflow-hidden ${
-        props.showMenu
-          ? `${styles["showMenu"]} max-h-[500px] pb-5`
+      className={`lg:hidden font-normal overflow-y-auto ${props.showMenu
+          ? `${styles["showMenu"]} max-h-[70vh] pb-5`
           : `${styles["hideMenu"]} max-h-0 pb-0`
-      }`}
+        }`}
     >
       {props.navLinks.map((item, i) => (
         <a
           key={`navLink-${i}`}
-          className={`lg:hidden block ${
-            props.showSticky ? "lg:py-4" : "lg:py-6"
-          } py-1 lg:px-5 hover:text-neutral`}
+          className={`lg:hidden block ${props.showSticky ? "lg:py-4" : "lg:py-6"
+            } py-1 lg:px-5 hover:text-neutral`}
           href={item.url}
         >
           {item.content}
@@ -48,22 +46,19 @@ const Nav = (props: NavProps) => {
   return (
     <nav
       ref={ref}
-      className={`lg:items-center flex flex-col justify-start items-start font-bold z-[9999] ${
-        props.navLinksProps.showSticky
+      className={`lg:items-center flex flex-col justify-start items-start font-bold z-[9999] ${props.navLinksProps.showSticky
           ? `bg-primary text-secondary drop-shadow-lg`
           : `bg-secondary lg:bg-black/10 text-primary `
-      } px-4 w-full`}
+        } px-4 w-full`}
     >
       <div
-        className={`w-full max-w-screen-lg ${
-          !props.navLinksProps.showSticky ? "px-4" : "px-1"
-        }`}
+        className={`w-full max-w-screen-lg ${!props.navLinksProps.showSticky ? "px-4" : "px-1"
+          }`}
       >
         <div className={`flex items-center justify-between h-fit`}>
           <a
-            className={`${
-              props.navLinksProps.showSticky ? "py-4" : "py-6"
-            } text-2xl leading-[1.8rem] flex justify-center items-center`}
+            className={`${props.navLinksProps.showSticky ? "py-4" : "py-6"
+              } text-2xl leading-[1.8rem] flex justify-center items-center`}
             href="#"
           >
             <div className="relative h-8 aspect-square mr-2">
@@ -82,9 +77,8 @@ const Nav = (props: NavProps) => {
             {props.navLinksProps.navLinks.map((item, i) => (
               <a
                 key={`navLink-${i}`}
-                className={`hidden lg:block ${
-                  props.navLinksProps.showSticky ? "py-4" : "py-6"
-                } px-5 hover:text-neutral`}
+                className={`hidden lg:block ${props.navLinksProps.showSticky ? "py-4" : "py-6"
+                  } px-5 hover:text-neutral`}
                 href={item.url}
               >
                 {item.content}

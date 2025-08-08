@@ -117,7 +117,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 ml-10">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 ml-0 md:ml-10">
             {contentDetails.map((item) => (
               <ContentMoliCule key={item.heading} {...item} />
             ))}

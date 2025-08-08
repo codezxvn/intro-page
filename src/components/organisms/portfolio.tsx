@@ -49,11 +49,11 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className={`relative w-full pl-5 ${styles.overlay}`}>
+    <section className={`relative w-full ${styles.overlay}`}>
       <div className="absolute top-0 left-0 right-0 h-2/5 bg-gradient-to-b"></div>
 
       <div className="max-w-screen-lg mx-auto relative mt-10">
-        <div className="flex mr-4 ml-4 justify-between pb-5 grid-cols-3 mb-10">
+        <div className="flex justify-between pb-5 mb-10 px-4">
           <div className={`col-span-1`}>
             <span className="text-neutral mb-10">Recent Portfolio</span>
             <h2 className="text-white uppercase text-3xl font-bold tracking-wider">
@@ -61,11 +61,11 @@ export default function Portfolio() {
             </h2>
           </div>
         </div>
-        <div className="flex flex-row mr-4 ml-12 flex-wrap">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
           {portfolio.map((item) => (
             <div
               key={item.projectName}
-              className={`flex columns-3 px-2.5 ${styles.column}`}
+              className="w-full"
             >
               <PortfolioInfo {...item} />
             </div>

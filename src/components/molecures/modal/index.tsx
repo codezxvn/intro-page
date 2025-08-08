@@ -24,7 +24,7 @@ export default function Modal() {
     >
       <div
         ref={modalContainerRef}
-        className="bg-primary sm:mx-8 px-3 py-4 sm:px-6 rounded sm:pb-8 sm:pt-5 max-w-screen-lg w-full max-h-[90vh] overflow-y-auto flex flex-col"
+        className="bg-primary mx-4 sm:mx-8 px-3 py-4 sm:px-6 rounded sm:pb-8 sm:pt-5 max-w-screen-lg w-full max-h-[90vh] overflow-y-auto flex flex-col"
       >
         <div className="w-full flex justify-between mb-8 border-b-[1px] pb-2 border-neutral border-solid">
           <span className="text-lg leading-none flex items-center uppercase font-bold">

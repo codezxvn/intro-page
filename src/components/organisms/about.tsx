@@ -23,6 +23,7 @@ export default function About() {
               width={500}
               height={500}
               alt="Picture of the author"
+              className="w-full h-auto"
             />
           </div>
           <div>
