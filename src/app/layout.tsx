@@ -41,6 +41,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <AppContext>
             <>
+              <div className="app-bg-decor" />
               <Modal />
               {children}
               <ToastContainer />

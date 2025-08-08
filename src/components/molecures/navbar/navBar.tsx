@@ -14,8 +14,8 @@ const NavLinks = (props: Props) => {
   return (
     <div
       className={`lg:hidden font-normal overflow-y-auto ${props.showMenu
-          ? `${styles["showMenu"]} max-h-[70vh] pb-5`
-          : `${styles["hideMenu"]} max-h-0 pb-0`
+        ? `${styles["showMenu"]} max-h-[70vh] pb-5`
+        : `${styles["hideMenu"]} max-h-0 pb-0`
         }`}
     >
       {props.navLinks.map((item, i) => (
@@ -46,48 +46,64 @@ const Nav = (props: NavProps) => {
   return (
     <nav
       ref={ref}
-      className={`lg:items-center flex flex-col justify-start items-start font-bold z-[9999] ${props.navLinksProps.showSticky
-          ? `bg-primary text-secondary drop-shadow-lg`
-          : `bg-secondary lg:bg-black/10 text-primary `
-        } px-4 w-full`}
+      className={`lg:items-center flex flex-col justify-start items-start font-bold z-[9999] w-full transition-colors duration-300 ${props.navLinksProps.showSticky
+        ? "text-secondary bg-primary/70 backdrop-blur-md"
+        : "text-primary bg-secondary/30 glass"
+        }`}
     >
-      <div
-        className={`w-full max-w-screen-lg ${!props.navLinksProps.showSticky ? "px-4" : "px-1"
-          }`}
-      >
-        <div className={`flex items-center justify-between h-fit`}>
-          <a
-            className={`${props.navLinksProps.showSticky ? "py-4" : "py-6"
-              } text-2xl leading-[1.8rem] flex justify-center items-center`}
-            href="#"
+      <div className="w-full">
+        <div className={`max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 py-2`}>
+          <div
+            className={`flex items-center justify-between h-14 sm:h-16 px-1 sm:px-2`}
           >
-            <div className="relative h-8 aspect-square mr-2">
-              <Image
-                src={"/logo-single.svg"}
-                alt="brand"
-                objectFit="fill"
-                fill
-                className="z-[99999]"
-              />
-            </div>
-            CodeZX
-          </a>
-          <div className="h-10 aspect-square flex justify-end items-center">
-            <IoMenu className="w-full text-5xl" onClick={handleBurgerCLick} />
-            {props.navLinksProps.navLinks.map((item, i) => (
-              <a
-                key={`navLink-${i}`}
-                className={`hidden lg:block ${props.navLinksProps.showSticky ? "py-4" : "py-6"
-                  } px-5 hover:text-neutral`}
-                href={item.url}
+            <a
+              className={`${props.navLinksProps.showSticky ? "py-4" : "py-6"
+                } text-2xl leading-[1.8rem] flex justify-center items-center`}
+              href="#"
+            >
+              <div className="relative h-8 aspect-square mr-2">
+                <Image
+                  src={"/logo-single.svg"}
+                  alt="brand"
+                  objectFit="fill"
+                  fill
+                  className="z-[99999]"
+                />
+              </div>
+              CodeZX
+            </a>
+            <div className="h-10 flex justify-end items-center gap-1 md:gap-2">
+              <button
+                aria-label="Open menu"
+                className={`lg:hidden h-10 w-10 inline-flex items-center justify-center rounded-md transition-colors ${props.navLinksProps.showSticky
+                  ? "hover:bg-black/5 text-secondary"
+                  : "hover:bg-white/10 text-primary glass"
+                  }`}
+                onClick={handleBurgerCLick}
               >
-                {item.content}
-              </a>
-            ))}
+                <IoMenu className="text-2xl" />
+              </button>
+              {props.navLinksProps.navLinks.map((item, i) => (
+                <a
+                  key={`navLink-${i}`}
+                  className={`hidden lg:block ${props.navLinksProps.showSticky ? "py-4" : "py-6"
+                    } px-4 hover:text-neutral transition-colors`}
+                  href={item.url}
+                >
+                  {item.content}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-      <NavLinks {...props.navLinksProps} showMenu={showMenu} />
+      {showMenu && (
+        <div className="w-full">
+          <div className={`max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 py-2 lg:hidden`}>
+            <NavLinks {...props.navLinksProps} showMenu={showMenu} />
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

@@ -6,7 +6,7 @@ export default function MemberInfo(info: TeamMemberProps) {
   return (
     <div className="w-full px-3 flex flex-col sm:flex-row sm:items-start items-center">
       <div className=" flex flex-col justify-start items-start w-fit">
-        <div className="w-40 relative aspect-square p-1 border-2 border-solid border-neutral rounded-full">
+        <div className="w-40 relative aspect-square p-1 rounded-full glass">
           <div className="relative w-full h-full rounded-full overflow-hidden">
             <Image
               fill
@@ -16,10 +16,10 @@ export default function MemberInfo(info: TeamMemberProps) {
             />
           </div>
         </div>
-        <div className="flex justify-between w-full mt-3 mb-3">
+        <div className="flex justify-between w-full mt-3 mb-3 gap-2">
           {info.socialIcons.map((item, i) => (
             <a
-              className="text-primary p-2 rounded-full border-1 border-primary bg-secondary hover:opacity-70 active:opacity-60"
+              className="text-primary p-2 rounded-full glass hover:bg-white/10"
               href={item.url}
               key={`social-icon-${item.url}-${i}`}
             >
@@ -29,13 +29,15 @@ export default function MemberInfo(info: TeamMemberProps) {
         </div>
       </div>
       <div className="flex flex-col flex-grow sm:ml-8">
-        <span className="mb-5 font-bold text-3xl w-fit sm:mx-0 mx-auto">
+        <span className="mb-2 font-semibold text-2xl w-fit sm:mx-0 mx-auto">
           {info.name}
         </span>
-        <span className="font-bold bg-slate-600 text-primary px-4 py-1 rounded-md w-fit sm:w-full mx-auto[]]]]]]]]]]]]]]]]">
+        <span className="font-medium glass-chip w-fit sm:w-full">
           {info.role}
         </span>
-        <span className="w-full mt-4">{info.introduction}</span>
+        <span className="w-full mt-4 text-sm leading-6 text-white/90 glass p-4 rounded-xl">
+          {info.introduction}
+        </span>
       </div>
     </div>
   );

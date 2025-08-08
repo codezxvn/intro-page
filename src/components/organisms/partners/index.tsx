@@ -6,23 +6,19 @@ export default function Partners() {
     "/images/partner/stitch4.webp",
   ];
   return (
-    <section className="w-full py-16 bg-primary flex justify-center items-center">
-      <div className="flex flex-col justify-center items-start lg:max-w-screen-lg w-full">
-        <span className="text-neutral uppercase font-extrabold text-sm pb-4">
-          Who are we with
-        </span>
-        <h2 className="text-2xl md:text-4xl mb-3 font-bold leading-normal uppercase">
-          Our partners
-        </h2>
-        <div className="w-full flex flex-col sm:flex-row gap-4 mt-7">
+    <section className="w-full py-16 bg-primary text-secondary flex justify-center items-center">
+      <div className="flex flex-col justify-center items-start lg:max-w-screen-lg w-full px-4 lg:px-0">
+        <span className="text-neutral uppercase font-extrabold text-sm pb-2">Trusted by</span>
+        <h2 className="text-2xl md:text-4xl mb-6 font-bold leading-normal uppercase">Partners & Clients</h2>
+        <div className="w-full grid sm:grid-cols-2 grid-cols-1 gap-4 mt-2">
           {images.map((item) => (
-            <div key={item} className="relative flex-grow h-36 py-4 px-2">
-              <div className="w-full h-full relative">
+            <div key={item} className="glass rounded-xl h-24 sm:h-28 flex items-center justify-center p-4 hover:bg-white/20 transition-colors">
+              <div className="relative w-full h-full">
                 <Image
                   src={item}
-                  fill
                   alt={`partner-${item}`}
-                  className="object-contain invert grayscale"
+                  fill
+                  className="object-contain opacity-80 grayscale hover:opacity-100 hover:grayscale-0 transition"
                 />
               </div>
             </div>

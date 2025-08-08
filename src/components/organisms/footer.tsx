@@ -84,7 +84,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-secondary">
+    <footer className="relative bg-secondary/60 backdrop-blur-md text-primary">
       <div className="mx-auto w-full max-w-screen-lg p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex flex-col">
@@ -105,12 +105,12 @@ export default function Footer() {
               </div>
               <br />
             </a>
-            <div className="flex space-x-4">
+            <div className="flex space-x-3">
               {socialIcon.map((icon, i) => (
                 <a
                   href={icon.url}
                   key={`social-icon-${i}`}
-                  className="w-10 aspect-square flex justify-center items-center font-bold text-sm text-primary bg-neutral rounded-3xl hover:animate-ping"
+                  className="w-10 aspect-square flex justify-center items-center font-bold text-sm rounded-2xl glass hover:bg-white/10"
                 >
                   <icon.icon />
                 </a>
@@ -122,18 +122,16 @@ export default function Footer() {
               <ContentMoliCule key={item.heading} {...item} />
             ))}
             <div>
-              <h2 className="mb-6 font-semibold uppercase text-white">
-                HAVE A QUESTION?
-              </h2>
+              <h2 className="mb-4 font-semibold uppercase text-white">HAVE A QUESTION?</h2>
               {companyInfo.map((item) => (
                 <CompanyMolicule key={item.info} {...item} />
               ))}
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-white/10 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-white/60 sm:text-center">
             Copyright © {new Date().getFullYear()}{" "}
             <a href="#" className="hover:underline">
               CodeZX

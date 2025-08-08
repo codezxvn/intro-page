@@ -8,8 +8,8 @@ export default function Intro() {
     {
       imageSrc: "/images/header_bg.webp",
       statement: "Welcome to CodeZX",
-      title: "Digital Innovation Company that Creates Solution",
-      desc: "We create technology advancement for your bussiness",
+      title: "Digital innovation, delivered",
+      desc: "We design and ship pragmatic, high‑impact software that moves your business forward.",
     },
   ];
 
@@ -21,6 +21,7 @@ export default function Intro() {
             key={item.title}
             className={`w-full h-screen relative flex justify-center items-center`}
           >
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
             <IntroItem {...item} />
           </div>
         ))}

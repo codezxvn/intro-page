@@ -190,18 +190,15 @@ export default function Teams() {
   ];
 
   return (
-    <section className="w-full py-[7em] flex justify-center px-4 lg:px-0 overflow-hidden relative bg-primary">
+    <section className="w-full py-[7em] flex justify-center px-4 lg:px-0 overflow-hidden relative bg-primary text-secondary">
       <div className="max-w-screen-lg w-full flex flex-col items-end">
         <div className="w-full flex flex-col sm:flex-row justify-between items-start md:items-center pb-12">
           <div className="flex flex-col justify-center items-start lg:max-w-[50%] w-full">
-            <span
-              ref={ref}
-              className="text-neutral uppercase font-extrabold text-sm pb-4"
-            >
+            <span ref={ref} className="text-neutral uppercase font-extrabold text-sm pb-4">
               meet the team
             </span>
             <h2 className="text-2xl md:text-4xl mb-3 font-bold leading-normal">
-              PROFESSIONAL CREATIVE TEAM MEMBERS
+              People who build the work you see
             </h2>
           </div>
           <a
