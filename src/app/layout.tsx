@@ -12,43 +12,41 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://codezx.vn"),
   title: "CodeZX - Digital Transform Solution",
   description:
-    "Tech solution for you bussines, we providing services with our cares for any of your business tech related needs.",
+    "Tech solutions for your business. We provide services with care for any of your tech-related needs.",
   icons: "./favicon.ico",
   verification: {
     google: "rKE3kMaIb_WWBLz17HE3DcxyuHXDZAAJR-t5zbnnigI",
   },
   openGraph: {
-    url: "codezx.vn",
+    url: "https://codezx.vn",
     title: "CodeZX - Digital Transform Solution",
     description:
-      "Tech solution for you bussines, we providing services with our cares for any of your business tech related needs.",
+      "Tech solutions for your business. We provide services with care for any of your tech-related needs.",
     images: {
-      url: "./logo-single.svg",
+      url: "/logo-single.svg",
       width: 800,
       height: 800,
     },
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <html lang="en">
-        <body className={inter.className}>
-          <AppContext>
-            <>
-              <div className="app-bg-decor" />
-              <Modal />
-              {children}
-              <ToastContainer />
-            </>
-          </AppContext>
-        </body>
-      </html>
-    </>
+    <html lang="en">
+      <body className={inter.className}>
+        <AppContext>
+          <>
+            <div className="app-bg-decor" />
+            <Modal />
+            {children}
+            <ToastContainer />
+          </>
+        </AppContext>
+      </body>
+    </html>
   );
 }

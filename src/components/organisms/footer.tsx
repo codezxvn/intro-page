@@ -52,15 +52,15 @@ export default function Footer() {
       content: [
         {
           content: "Home",
-          url: "#",
+          url: "/",
         },
         {
           content: "About Us",
-          url: "#",
+          url: "/#about",
         },
         {
           content: "Contact",
-          url: "#",
+          url: "/#contact",
         },
       ],
     },
@@ -84,7 +84,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-secondary/60 backdrop-blur-md text-primary">
+    <footer id="contact" className="relative bg-secondary/60 backdrop-blur-md text-primary">
       <div className="mx-auto w-full max-w-screen-lg p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex flex-col">
@@ -136,7 +136,7 @@ export default function Footer() {
             <a href="#" className="hover:underline">
               CodeZX
             </a>
-            . All rights reserved
+            . All rights reserved.
           </span>
         </div>
       </div>
