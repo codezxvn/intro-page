@@ -10,12 +10,13 @@ export default function About() {
     freezeOnceVisible: true,
   });
   const welcomeInfo: WelComeProps = {
-    heading: "CodeZX",
-    body:
-      "We partner with teams to design, build, and scale products that matter. From VoIP and fintech to e‑commerce and data platforms, we bring deep expertise in Java/Spring, Python, React, Flutter, Kafka, Redis, Docker, and Kubernetes—plus hands‑on experience with Zero‑Trust, blockchain, and ML/AI.",
+    heading: "About Us",
+    body: (
+      <p className="text-justify leading-relaxed">We partner with teams to design, build, and scale products that matter. From VoIP and fintech to e‑commerce and data platforms, we bring deep expertise in Java/Spring, Python, React, Flutter, Kafka, Redis, Docker, and Kubernetes—plus hands‑on experience with Zero‑Trust, blockchain, and ML/AI.</p>
+    ) as any,
   };
   return (
-    <section className="bg-primary text-secondary relative w-full pl-5">
+    <section id="about" className="bg-primary text-secondary relative w-full pl-5">
       <div className="max-w-screen-lg mx-auto mt-4 pr-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div>

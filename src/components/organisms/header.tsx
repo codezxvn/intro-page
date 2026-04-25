@@ -37,11 +37,15 @@ export default function Header() {
       },
       {
         content: <>About</>,
-        url: "/about",
+        url: "/#about",
+      },
+      {
+        content: <>Portfolio</>,
+        url: "/#portfolio",
       },
       {
         content: <>Contact</>,
-        url: "/contact",
+        url: "/#contact",
       },
     ],
   };

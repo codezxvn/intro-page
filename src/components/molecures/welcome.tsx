@@ -7,7 +7,7 @@ export default function WelcomeMolicule({ heading, body }: WelComeProps) {
       <h2 className={`uppercase text-3xl md:text-4xl font-extrabold tracking-tight mb-4 md:mb-5 ${styles.content}`}>
         We build reliable, elegant software
       </h2>
-      <p className="text-black/80 block max-w-prose leading-7 glass p-4 rounded-xl">{body}</p>
+      <div className="text-black/80 block max-w-prose leading-7 glass p-4 rounded-xl">{body}</div>
     </div>
   );
 }
