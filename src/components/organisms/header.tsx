@@ -33,15 +33,19 @@ export default function Header() {
     navLinks: [
       {
         content: <>Home</>,
-        url: "#",
+        url: "/",
       },
       {
         content: <>About</>,
-        url: "#",
+        url: "/#about",
       },
       {
-        content: <>Contacts</>,
-        url: "#",
+        content: <>Portfolio</>,
+        url: "/#portfolio",
+      },
+      {
+        content: <>Contact</>,
+        url: "/#contact",
       },
     ],
   };

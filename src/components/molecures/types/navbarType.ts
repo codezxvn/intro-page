@@ -1,5 +1,7 @@
 import { IconType } from "react-icons";
 
+import type { JSX } from "react";
+
 export type NavBarProps = {
   phone: string;
   email: string;

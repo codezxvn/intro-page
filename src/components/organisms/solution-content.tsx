@@ -52,12 +52,10 @@ export default function SolutionOrganisms() {
           <div className={`${styles["grid-container"]}`}>
             <div className={`${styles.quote}`}>
               <h2 className={styles.title}>
-                We Shape The <br /> Perfect Solutions
+                Architecting The <br /> Digital Future
               </h2>
               <p className={styles.content}>
-                We are a trusted partner that helps companies rapidly grow with
-                low costs in IT, in-house software, enterprise Software, and
-                digital transformation.
+                We are a trusted partner that helps companies rapidly grow with low costs in IT, in-house software, enterprise Software, and digital transformation.
               </p>
             </div>
             {solutionIcons.map((item) => (
