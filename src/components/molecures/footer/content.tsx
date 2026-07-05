@@ -1,5 +1,4 @@
 import { BiSolidChevronRight } from "react-icons/bi";
-import Link from "next/link";
 import { ContentProps } from "../types/contentType";
 
 export default function ContentMoliCule({ heading, content }: ContentProps) {
@@ -15,9 +14,9 @@ export default function ContentMoliCule({ heading, content }: ContentProps) {
             <span className="h-6 w-6 mt-0.5 flex items-center justify-center rounded-md glass text-neutral shrink-0">
               <BiSolidChevronRight className="text-lg" />
             </span>
-            <Link href={item.url} className="leading-6">
+            <a href={item.url} className="leading-6">
               {item.content}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
