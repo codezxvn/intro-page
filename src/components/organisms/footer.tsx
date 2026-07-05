@@ -56,11 +56,11 @@ export default function Footer() {
         },
         {
           content: "About Us",
-          url: "/#about",
+          url: "#about",
         },
         {
           content: "Contact",
-          url: "/#contact",
+          url: "#contact",
         },
       ],
     },
