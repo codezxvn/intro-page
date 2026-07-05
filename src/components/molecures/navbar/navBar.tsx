@@ -2,6 +2,7 @@ import { IoMenu } from "react-icons/io5";
 import { NavLinksProps, NavProps } from "../types/navbarType";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { useIntersectionObserver } from "usehooks-ts";
 import styles from "../styles/Navbar.module.css";
@@ -19,14 +20,14 @@ const NavLinks = (props: Props) => {
         }`}
     >
       {props.navLinks.map((item, i) => (
-        <a
+        <Link
           key={`navLink-${i}`}
           className={`lg:hidden block ${props.showSticky ? "lg:py-4" : "lg:py-6"
             } py-1 lg:px-5 hover:text-neutral`}
           href={item.url}
         >
           {item.content}
-        </a>
+        </Link>
       ))}
     </div>
   );
@@ -84,14 +85,14 @@ const Nav = (props: NavProps) => {
                 <IoMenu className="text-2xl" />
               </button>
               {props.navLinksProps.navLinks.map((item, i) => (
-                <a
+                <Link
                   key={`navLink-${i}`}
                   className={`hidden lg:block ${props.navLinksProps.showSticky ? "py-4" : "py-6"
                     } px-4 hover:text-neutral transition-colors`}
                   href={item.url}
                 >
                   {item.content}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
