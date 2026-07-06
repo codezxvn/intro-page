@@ -1,3 +1,5 @@
+"use client";
+
 import { IoMenu } from "react-icons/io5";
 import { NavLinksProps, NavProps } from "../types/navbarType";
 

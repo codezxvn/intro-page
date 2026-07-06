@@ -1,3 +1,5 @@
+"use client";
+
 import { BiSolidChevronRight } from "react-icons/bi";
 import { ContentProps } from "../types/contentType";
 
