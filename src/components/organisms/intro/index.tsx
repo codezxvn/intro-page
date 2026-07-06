@@ -6,7 +6,7 @@ import IntroItem from "./introItem";
 export default function Intro() {
   const introItems: IntroItemProps[] = [
     {
-      imageSrc: "/images/hero_enterprise_blue_bg.png",
+      imageSrc: "/images/hero_enterprise_bg.png",
       statement: "Welcome to CodeZX",
       title: "Digital innovation, delivered",
       desc: "We design and ship pragmatic, high‑impact software that moves your business forward.",
