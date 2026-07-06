@@ -6,4 +6,4 @@ export { default as Intro } from "./intro";
 export { default as Partners } from "./partners";
 export { default as Portfolio } from "./portfolio";
 export { default as SolutionOrganisms } from "./solution-content";
-export { default as Teams } from "./teams";
+export { default as WorkProcess } from "./process";
