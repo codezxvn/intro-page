@@ -100,7 +100,7 @@ export default function Footer() {
               <div className="flex flex-col h-full text-primary ml-3 justify-end">
                 <span className="text-4xl font-extrabold mb-1">CodeZX</span>
                 <span className="text-nowrap text-sm leading-none">
-                  Think more - code less
+                  Think simple, live better
                 </span>
               </div>
               <br />
