@@ -72,57 +72,83 @@ h6 {
 
 /* Theming and utility layers for glassmorphism and neumorphism */
 :root {
+  /* Light Mode (Off-White) */
+  --bg-base: #f9fafb;
+  --neo-surface: #ffffff;
+  --neo-dark-shadow: rgba(0, 0, 0, 0.05);
+  --neo-light-shadow: rgba(255, 255, 255, 0.8);
+  --color-primary: #111827;
+  --color-secondary: #ffffff;
+  --color-neutral: #a18804;
+  --bg-gradient-1: rgba(0, 0, 0, 0.02);
+  --bg-gradient-2: rgba(0, 0, 0, 0.015);
+  --decor-1: rgba(0, 212, 255, 0.04);
+  --decor-2: rgba(255, 0, 135, 0.03);
+  --decor-3: rgba(0, 0, 0, 0.02);
+}
+
+.dark {
+  /* Dark Mode */
   --bg-base: #0b0d11;
   --neo-surface: #232429;
   --neo-dark-shadow: rgba(0, 0, 0, 0.45);
   --neo-light-shadow: rgba(255, 255, 255, 0.06);
+  --color-primary: #ffffff;
+  --color-secondary: #232429;
+  --color-neutral: #cdb30c;
+  --bg-gradient-1: rgba(255, 255, 255, 0.04);
+  --bg-gradient-2: rgba(255, 255, 255, 0.03);
+  --decor-1: rgba(0, 212, 255, 0.08);
+  --decor-2: rgba(255, 0, 135, 0.06);
+  --decor-3: rgba(255, 255, 255, 0.05);
 }
 
 body {
   background: radial-gradient(
       1200px 800px at 10% 10%,
-      rgba(255, 255, 255, 0.04),
+      var(--bg-gradient-1),
       transparent 60%
     ),
     radial-gradient(
       1000px 700px at 80% 0%,
-      rgba(255, 255, 255, 0.03),
+      var(--bg-gradient-2),
       transparent 60%
     ),
     var(--bg-base);
+  color: var(--color-primary);
 }
 
 @layer components {
   /* Glassmorphism base */
   .glass {
-    @apply border border-white/10 bg-white/5 backdrop-blur-md;
+    @apply border dark:border-white/10 border-black/5 dark:bg-white/5 bg-white/60 backdrop-blur-md;
   }
   .glass-strong {
-    @apply border border-white/20 bg-white/10 backdrop-blur-xl shadow-lg;
+    @apply border dark:border-white/20 border-black/10 dark:bg-white/10 bg-white/80 backdrop-blur-xl shadow-lg;
   }
   .glass-dark {
-    @apply border border-white/10 bg-white/5 text-primary backdrop-blur-md;
+    @apply border dark:border-white/10 border-black/10 bg-white/5 text-primary backdrop-blur-md;
   }
   .glass-light {
-    @apply border border-black/10 text-secondary backdrop-blur-lg;
+    @apply border border-black/10 text-primary backdrop-blur-lg;
     background: rgba(255, 255, 255, 0.7);
   }
   .glass-card {
-    @apply relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+    @apply relative overflow-hidden rounded-2xl border dark:border-white/10 border-black/5 dark:bg-white/5 bg-white/80 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
   }
   .glass-chip {
-    @apply inline-flex items-center rounded-full border border-white/10 bg-white/10 text-primary px-3 py-1 text-xs uppercase tracking-wide;
+    @apply inline-flex items-center rounded-full border dark:border-white/10 border-black/5 dark:bg-white/10 bg-black/5 text-primary px-3 py-1 text-xs uppercase tracking-wide;
   }
   .role-chip {
-    @apply inline-flex items-center rounded-full border border-white/20 bg-white/20 text-white/90 px-2.5 py-0.5 text-[11px] uppercase tracking-wide shadow-md backdrop-blur;
+    @apply inline-flex items-center rounded-full border dark:border-white/20 border-black/10 dark:bg-white/20 bg-black/10 dark:text-white/90 text-black/90 px-2.5 py-0.5 text-[11px] uppercase tracking-wide shadow-md backdrop-blur;
   }
   .glass-button {
-    @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/10 text-primary px-5 py-3 transition-colors;
+    @apply inline-flex items-center justify-center rounded-xl border dark:border-white/10 border-black/5 dark:bg-white/10 bg-white/80 text-primary px-5 py-3 transition-colors;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06),
-      0 10px 30px -10px rgba(0, 0, 0, 0.4);
+      0 10px 30px -10px rgba(0, 0, 0, 0.1);
   }
   .glass-button:hover {
-    background: rgba(255, 255, 255, 0.14);
+    @apply dark:bg-white/20 bg-black/5;
   }
 
   /* Neumorphism on dark surface */
@@ -146,17 +172,17 @@ body {
     pointer-events: none;
     background: radial-gradient(
         600px 400px at 20% 10%,
-        rgba(0, 212, 255, 0.08),
+        var(--decor-1),
         transparent 60%
       ),
       radial-gradient(
         700px 500px at 80% 20%,
-        rgba(255, 0, 135, 0.06),
+        var(--decor-2),
         transparent 60%
       ),
       radial-gradient(
         600px 600px at 30% 80%,
-        rgba(255, 255, 255, 0.05),
+        var(--decor-3),
         transparent 60%
       );
   }

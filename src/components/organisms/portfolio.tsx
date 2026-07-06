@@ -71,7 +71,7 @@ export default function Portfolio() {
         <div className="flex justify-between pb-5 mb-10 px-4">
           <div className={`col-span-1`}>
             <span className="text-neutral mb-10 block">Recent Work</span>
-            <h2 className="text-white uppercase text-3xl font-bold tracking-wider">
+            <h2 className="text-primary uppercase text-3xl font-bold tracking-wider">
               Transforming Vision Into Digital Reality
             </h2>
           </div>
@@ -96,7 +96,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {coreTechs.map((tech) => (
               <div key={tech.category} className="glass p-6 rounded-2xl flex flex-col">
-                <h3 className="text-white text-lg font-bold mb-5">{tech.category}</h3>
+                <h3 className="text-primary text-lg font-bold mb-5">{tech.category}</h3>
                 <div className="flex flex-wrap gap-2">
                   {tech.tags.map((tag) => (
                     <span key={tag} className="glass-chip px-3 py-1 text-sm font-medium">

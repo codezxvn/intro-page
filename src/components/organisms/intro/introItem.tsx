@@ -21,7 +21,7 @@ export default function IntroItem(props: IntroItemProps) {
             <h1 className="mb-5 uppercase text-3xl sm:text-4xl md:text-5xl leading-tight font-bold">
               {props.title}
             </h1>
-            <p className="mb-6 text-white/80 max-w-prose glass p-4 rounded-xl">
+            <p className="mb-6 dark:text-white/80 text-black/80 max-w-prose glass p-4 rounded-xl">
               {props.desc}
             </p>
             {/* CTA (optional) */}
