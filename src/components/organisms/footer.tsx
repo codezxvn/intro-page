@@ -130,8 +130,8 @@ export default function Footer() {
           </div>
         </div>
         <hr className="my-6 border-white/10 sm:mx-auto lg:my-8" />
-      <div className="w-full text-center">
-        <span className="text-sm text-white/60">
+        <div className="w-full text-center">
+          <span className="text-sm text-white/60">
             Copyright © {new Date().getFullYear()}{" "}
             <a href="#" className="hover:underline">
               CodeZX
