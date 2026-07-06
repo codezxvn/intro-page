@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="750"
+   width="1200"
    height="300"
-   viewBox="0 0 749.99995 299.99998"
+   viewBox="0 0 1200 299.99998"
    sodipodi:docname="logo-full-text.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -290,7 +290,7 @@
         <path
            id="path72"
            d="m 121.47263,499.19142 v 87.05333 l 121.18399,-43.52666 z"
-           style="fill:#cdb30c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+           style="fill:#06b6d4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
         <path
            id="path73"
            d="M 121.47263,412.13822 V 325.08489 H 363.84062 Z"
@@ -302,7 +302,7 @@
         <path
            id="path75"
            d="m 121.47263,325.08502 v 87.05333 l 121.18399,-43.52666 z"
-           style="fill:#cdb30c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
+           style="fill:#06b6d4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333" />
       </g>
       <text
          id="text76"
@@ -325,7 +325,7 @@
            sodipodi:role="line"
            id="tspan76-0"
            x="334.49701"
-           y="584.34283">Just tech</tspan></text>
+           y="584.34283">Think simple, live better</tspan></text>
     </g>
     <text
        id="text77"
