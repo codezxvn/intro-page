@@ -1,3 +1,5 @@
+"use client";
+
 import { IoMenu } from "react-icons/io5";
 import { NavLinksProps, NavProps } from "../types/navbarType";
 
@@ -11,6 +13,19 @@ type Props = {
 } & NavLinksProps;
 
 const NavLinks = (props: Props) => {
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string) => {
+    if (url.startsWith("#") && url.length > 1) {
+      e.preventDefault();
+      const target = document.querySelector(url);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+      if (props.showMenu !== undefined) {
+        // We're letting the parent handle closing, or we can just scroll.
+      }
+    }
+  };
+
   return (
     <div
       className={`lg:hidden font-normal overflow-y-auto ${props.showMenu
@@ -24,6 +39,7 @@ const NavLinks = (props: Props) => {
           className={`lg:hidden block ${props.showSticky ? "lg:py-4" : "lg:py-6"
             } py-1 lg:px-5 hover:text-neutral`}
           href={item.url}
+          onClick={(e) => handleLinkClick(e, item.url)}
         >
           {item.content}
         </a>
@@ -37,6 +53,17 @@ const Nav = (props: NavProps) => {
   const { isIntersecting, ref } = useIntersectionObserver({ threshold: 1 });
   const handleBurgerCLick = () => {
     setShowMenu(!showMenu);
+  };
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string) => {
+    if (url.startsWith("#") && url.length > 1) {
+      e.preventDefault();
+      const target = document.querySelector(url);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+      setShowMenu(false); // Close mobile menu if open
+    }
   };
 
   if (!isIntersecting) {
@@ -89,6 +116,7 @@ const Nav = (props: NavProps) => {
                   className={`hidden lg:block ${props.navLinksProps.showSticky ? "py-4" : "py-6"
                     } px-4 hover:text-neutral transition-colors`}
                   href={item.url}
+                  onClick={(e) => handleLinkClick(e, item.url)}
                 >
                   {item.content}
                 </a>
