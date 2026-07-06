@@ -12,11 +12,11 @@ export default function Portfolio() {
         "Modernizing operations with a unified platform: CRM integration, workflow automation, and data analytics to improve decision‑making and customer experience.",
     },
     {
-      projectType: "VoIP",
-      projectName: "Softphone",
+      projectType: "RAG",
+      projectName: "AI Assistant",
       projectImageSrc: "/images/portfolio/voip.png",
       projectDescription:
-        "Secure, high‑quality VoIP/WebRTC communications with call routing, presence, and recording—built for scale and reliability.",
+        "Intelligent AI Assistant leveraging Retrieval-Augmented Generation (RAG) for accurate, context-aware responses and data analysis.",
     },
     {
       projectType: "Web Application",
