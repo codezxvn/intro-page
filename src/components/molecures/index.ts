@@ -7,6 +7,5 @@ export { default as NavBarMolecure } from "./navbar";
 export { default as PortfolioInfo } from "./portfolio/PortfolioInfo";
 export { default as QuestionForm } from "./questionForm";
 export { default as StickyBackground } from "./stickyBackground";
-export { default as TeamMember } from "./teamMember";
 export { default as ToastContainer } from "./toastContainer";
 export { default as WelcomeMolicule } from "./welcome";
