@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useIntersectionObserver } from "usehooks-ts";
 import styles from "../styles/Navbar.module.css";
+import ThemeToggle from "../ThemeToggle";
 
 type Props = {
   showMenu: boolean;
@@ -121,6 +122,9 @@ const Nav = (props: NavProps) => {
                   {item.content}
                 </a>
               ))}
+              <div className="ml-2 flex items-center">
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </div>
