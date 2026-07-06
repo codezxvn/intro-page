@@ -21,7 +21,7 @@ export default function Intro() {
             key={item.title}
             className={`w-full h-screen relative flex justify-center items-center`}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0b0d11]/60 via-[#0b0d11]/40 to-[#0b0d11]" />
             <IntroItem {...item} />
           </div>
         ))}
