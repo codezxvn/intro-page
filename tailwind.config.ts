@@ -7,7 +7,7 @@ const config: Config = {
       colors: {
         primary: "#fff",
         secondary: "#232429",
-        neutral: "#06b6d4",
+        neutral: "#cdb30c",
       },
       screens: {
         lg: "1082px",
