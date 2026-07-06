@@ -51,7 +51,7 @@ export default function Portfolio() {
   const coreTechs = [
     {
       category: "AI, ML & Big Data",
-      tags: ["Deep Learning (CNN, LSTM)", "RAG Architecture", "XGBoost + Sarimax", "Apache Spark", "Hadoop Ecosystem", "Databricks"],
+      tags: ["Deep Learning", "RAG Architecture", "Apache Spark", "Hadoop Ecosystem", "Databricks"],
     },
     {
       category: "Frontend & Mobile Development",

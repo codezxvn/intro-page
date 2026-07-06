@@ -5,6 +5,7 @@ import Image from "next/image";
 import { BsBank, BsWindowSplit } from "react-icons/bs";
 import { GiArtificialIntelligence, GiDigitalTrace } from "react-icons/gi";
 import { SlEarphonesAlt } from "react-icons/sl";
+import { BsDatabase } from "react-icons/bs";
 import { useIntersectionObserver } from "usehooks-ts";
 import { CardProps } from "../molecures/types/solutionType";
 import styles from "./styles/SolutionContent.module.css";
@@ -25,8 +26,8 @@ export default function SolutionOrganisms() {
       iconAPI: MdOutlineMedicalInformation,
     },
     {
-      title: "VoIP Technology",
-      iconAPI: SlEarphonesAlt,
+      title: "Retrieval-Augmented Generation (RAG)",
+      iconAPI: BsDatabase,
     },
     {
       title: "Web-App Development",
@@ -49,8 +50,8 @@ export default function SolutionOrganisms() {
       <div ref={ref} className="w-full"></div>
       {isIntersecting && (
         <div className={`${styles.container} max-w-screen-lg px-4`}>
-          <div className={`${styles["grid-container"]}`}>
-            <div className={`${styles.quote}`}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="sm:col-span-2 flex flex-col justify-center">
               <h2 className={styles.title}>
                 Architecting The <br /> Digital Future
               </h2>

@@ -27,20 +27,3 @@
   color: #999999;
 }
 
-.grid-container {
-  --min: 20ch;
-  --gap: 1rem;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: var(--gap);
-}
-
-.grid-container > * {
-  flex: 1 0 var(--min);
-}
-
-.quote {
-  flex: 1 1 calc(2 * var(--min) + 3.75 * var(--gap));
-}
