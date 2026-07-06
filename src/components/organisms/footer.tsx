@@ -122,16 +122,16 @@ export default function Footer() {
               <ContentMoliCule key={item.heading} {...item} />
             ))}
             <div>
-              <h2 className="mb-4 font-semibold uppercase text-white">HAVE A QUESTION?</h2>
+              <h2 className="mb-4 font-semibold uppercase text-primary">HAVE A QUESTION?</h2>
               {companyInfo.map((item) => (
                 <CompanyMolicule key={item.info} {...item} />
               ))}
             </div>
           </div>
         </div>
-        <hr className="my-6 border-white/10 sm:mx-auto lg:my-8" />
+        <hr className="my-6 dark:border-white/10 border-black/10 sm:mx-auto lg:my-8" />
         <div className="w-full text-center">
-          <span className="text-sm text-white/60">
+          <span className="text-sm dark:text-white/60 text-black/60">
             Copyright © {new Date().getFullYear()}{" "}
             <a href="#" className="hover:underline">
               CodeZX

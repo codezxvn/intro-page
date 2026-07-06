@@ -37,7 +37,7 @@ export default function WorkProcess() {
       <div ref={ref} className="max-w-screen-lg mx-auto px-4 mt-10">
         <div className="text-center mb-16">
           <span className="text-neutral mb-4 block font-medium tracking-widest uppercase">How We Work</span>
-          <h2 className="text-white text-3xl md:text-4xl font-bold tracking-wider mb-6 uppercase">
+          <h2 className="text-primary text-3xl md:text-4xl font-bold tracking-wider mb-6 uppercase">
             A Proven Process for Digital Success
           </h2>
           <p className="text-[#999999] max-w-2xl mx-auto text-lg leading-relaxed">
@@ -50,15 +50,15 @@ export default function WorkProcess() {
             {steps.map((step, index) => (
               <div 
                 key={index} 
-                className="glass p-8 rounded-2xl flex flex-col group hover:-translate-y-2 hover:bg-white/5 transition-all duration-300 relative overflow-hidden"
+                className="glass p-8 rounded-2xl flex flex-col group dark:hover:bg-white/5 hover:bg-black/5 transition-all duration-300 relative overflow-hidden"
               >
-                <div className="absolute -bottom-4 -right-4 text-white/5 font-black text-9xl select-none transition-all duration-300 group-hover:text-white/10 group-hover:scale-110">
+                <div className="absolute -bottom-4 -right-4 dark:text-white/5 text-black/5 font-black text-9xl select-none transition-all duration-300 dark:group-hover:text-white/10 group-hover:text-black/10 group-hover:scale-110">
                   {index + 1}
                 </div>
                 <div className="w-16 h-16 rounded-xl glass flex items-center justify-center mb-6 text-neutral group-hover:scale-110 transition-transform duration-300 relative z-10">
                   <step.icon className="text-3xl" />
                 </div>
-                <h3 className="text-white text-xl font-bold mb-4 relative z-10">{step.title}</h3>
+                <h3 className="text-primary text-xl font-bold mb-4 relative z-10">{step.title}</h3>
                 <p className="text-[#999999] leading-relaxed relative z-10">
                   {step.description}
                 </p>

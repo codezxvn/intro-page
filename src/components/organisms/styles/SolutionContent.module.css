@@ -10,7 +10,7 @@
 }
 
 .title {
-  color: white;
+  color: var(--color-primary);
   font-size: 34px;
   font-weight: 700;
   line-height: 1.4;
