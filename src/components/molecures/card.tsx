@@ -17,8 +17,8 @@ export default function CardMolicule({ title, iconAPI, url }: CardProps) {
   };
 
   return (
-    <div className={styles.fadeInFromBottom}>
-      <a href={url || "#"} className={`group ${styles.media}`}>
+    <div className={`${styles.fadeInFromBottom} h-full`}>
+      <a href={url || "#"} className={`block group h-full ${styles.media}`}>
         <div className={styles.iconContent}>
           <Icon
             className={`leading-6 relative text-6xl text-neutral ${styles["icon"]}`}

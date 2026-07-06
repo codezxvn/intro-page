@@ -60,7 +60,7 @@ export default function SolutionOrganisms() {
               </p>
             </div>
             {solutionIcons.map((item) => (
-              <div key={item.title} className={`w-full`}>
+              <div key={item.title} className={`w-full h-full`}>
                 <CardMolicule {...item} />
               </div>
             ))}
