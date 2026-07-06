@@ -8,7 +8,7 @@ import {
   Partners,
   Portfolio,
   SolutionOrganisms,
-  Teams,
+  WorkProcess,
 } from "@/components/organisms";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         <SolutionOrganisms />
         <About />
         <Portfolio />
-        <Teams />
+        <WorkProcess />
         <FAQ />
         <Partners />
         <Footer />
