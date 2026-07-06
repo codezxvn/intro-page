@@ -72,16 +72,16 @@ h6 {
 
 /* Theming and utility layers for glassmorphism and neumorphism */
 :root {
-  /* Light Mode (Off-White) */
-  --bg-base: #f9fafb;
+  /* Light Mode (Pure White) */
+  --bg-base: #ffffff;
   --neo-surface: #ffffff;
-  --neo-dark-shadow: rgba(0, 0, 0, 0.05);
-  --neo-light-shadow: rgba(255, 255, 255, 0.8);
-  --color-primary: #111827;
+  --neo-dark-shadow: rgba(0, 0, 0, 0.08);
+  --neo-light-shadow: rgba(255, 255, 255, 1);
+  --color-primary: #000000;
   --color-secondary: #ffffff;
-  --color-neutral: #a18804;
-  --bg-gradient-1: rgba(0, 0, 0, 0.02);
-  --bg-gradient-2: rgba(0, 0, 0, 0.015);
+  --color-neutral: #b59800;
+  --bg-gradient-1: rgba(0, 0, 0, 0.03);
+  --bg-gradient-2: rgba(0, 0, 0, 0.02);
   --decor-1: rgba(0, 212, 255, 0.04);
   --decor-2: rgba(255, 0, 135, 0.03);
   --decor-3: rgba(0, 0, 0, 0.02);
@@ -121,7 +121,7 @@ body {
 @layer components {
   /* Glassmorphism base */
   .glass {
-    @apply border dark:border-white/10 border-black/5 dark:bg-white/5 bg-white/60 backdrop-blur-md;
+    @apply border dark:border-white/10 border-black/10 dark:bg-white/5 bg-white/60 backdrop-blur-md;
   }
   .glass-strong {
     @apply border dark:border-white/20 border-black/10 dark:bg-white/10 bg-white/80 backdrop-blur-xl shadow-lg;
@@ -134,16 +134,16 @@ body {
     background: rgba(255, 255, 255, 0.7);
   }
   .glass-card {
-    @apply relative overflow-hidden rounded-2xl border dark:border-white/10 border-black/5 dark:bg-white/5 bg-white/80 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+    @apply relative overflow-hidden rounded-2xl border dark:border-white/10 border-black/10 dark:bg-white/5 bg-white/80 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
   }
   .glass-chip {
-    @apply inline-flex items-center rounded-full border dark:border-white/10 border-black/5 dark:bg-white/10 bg-black/5 text-primary px-3 py-1 text-xs uppercase tracking-wide;
+    @apply inline-flex items-center rounded-full border dark:border-white/10 border-black/10 dark:bg-white/10 bg-black/5 text-primary px-3 py-1 text-xs uppercase tracking-wide;
   }
   .role-chip {
     @apply inline-flex items-center rounded-full border dark:border-white/20 border-black/10 dark:bg-white/20 bg-black/10 dark:text-white/90 text-black/90 px-2.5 py-0.5 text-[11px] uppercase tracking-wide shadow-md backdrop-blur;
   }
   .glass-button {
-    @apply inline-flex items-center justify-center rounded-xl border dark:border-white/10 border-black/5 dark:bg-white/10 bg-white/80 text-primary px-5 py-3 transition-colors;
+    @apply inline-flex items-center justify-center rounded-xl border dark:border-white/10 border-black/10 dark:bg-white/10 bg-white/80 text-primary px-5 py-3 transition-colors;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06),
       0 10px 30px -10px rgba(0, 0, 0, 0.1);
   }
