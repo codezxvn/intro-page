@@ -5,46 +5,32 @@ import { PortfolioProps } from "./types/portfolio";
 export default function Portfolio() {
   const portfolio: PortfolioProps[] = [
     {
-      projectType: "Digital Transformation",
-      projectName: "In‑house Software Platform",
-      projectImageSrc: "/images/portfolio/workflow.png",
-      projectDescription:
-        "Modernizing operations with a unified platform: CRM integration, workflow automation, and data analytics to improve decision‑making and customer experience.",
-    },
-    {
-      projectType: "RAG",
-      projectName: "AI Assistant",
+      projectType: "RAG System",
+      projectName: "Intelligent AI Assistant",
       projectImageSrc: "/images/portfolio/voip.png",
       projectDescription:
         "Intelligent AI Assistant leveraging Retrieval-Augmented Generation (RAG) for accurate, context-aware responses and data analysis.",
     },
     {
-      projectType: "Web Application",
-      projectName: "Food Delivery",
+      projectType: "Enterprise AI",
+      projectName: "Smart Support Chatbot",
+      projectImageSrc: "/images/portfolio/smart_chatbot.png",
+      projectDescription:
+        "An intelligent customer service chatbot powered by RAG, delivering instant, accurate, and 24/7 support by querying internal knowledge bases.",
+    },
+    {
+      projectType: "Conversational AI",
+      projectName: "Internal Knowledge Bot",
       projectImageSrc: "/images/portfolio/work-3.jpg",
       projectDescription:
-        "User‑friendly ordering with real‑time tracking, secure payments, and personalized recommendations to increase conversion and retention.",
+        "A secure, scalable chatbot that accesses company documents and policies using RAG, streamlining employee onboarding and information access.",
     },
     {
-      projectType: "Web Application",
-      projectName: "Blockchain",
-      projectImageSrc: "/images/portfolio/blockchain.png",
+      projectType: "Digital Transformation",
+      projectName: "In‑house AI Platform",
+      projectImageSrc: "/images/portfolio/workflow.png",
       projectDescription:
-        "Digital assets platform enabling creation, ownership, and cross‑platform use—optimized for performance and seamless UX.",
-    },
-    {
-      projectType: "Mobile Application",
-      projectName: "Trang Bang Tourism",
-      projectImageSrc: "/images/portfolio/tourism_app.png",
-      projectDescription:
-        "City guide app with curated itineraries, offline maps, and events—designed to boost local discovery and tourism.",
-    },
-    {
-      projectType: "Web Application",
-      projectName: "Coffee Shop",
-      projectImageSrc: "/images/portfolio/work-6.jpg",
-      projectDescription:
-        "Order‑ahead web app with customizable items, loyalty integration, and real‑time order tracking to streamline operations.",
+        "A centralized platform integrating RAG-based chatbots to automate workflows, streamline data retrieval, and improve decision‑making.",
     },
   ];
 
