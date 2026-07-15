@@ -33,10 +33,10 @@ export default function FAQ() {
               <>
                 Email us:{" "}
                 <a
-                  href="mailto:codezx24@gmail.com"
+                  href="mailto:ha.nguyen@codezx.vn"
                   className="text-neutral font-bold"
                 >
-                  codezx24@gmail.com
+                  ha.nguyen@codezx.vn
                 </a>
               </>,
               "We aim to respond within one business day.",
