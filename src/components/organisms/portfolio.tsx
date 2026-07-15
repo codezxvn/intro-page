@@ -7,7 +7,7 @@ export default function Portfolio() {
     {
       projectType: "RAG System",
       projectName: "Intelligent AI Assistant",
-      projectImageSrc: "/images/portfolio/voip.png",
+      projectImageSrc: "/images/portfolio/rag_system.png",
       projectDescription:
         "Intelligent AI Assistant leveraging Retrieval-Augmented Generation (RAG) for accurate, context-aware responses and data analysis.",
     },
@@ -21,14 +21,14 @@ export default function Portfolio() {
     {
       projectType: "Conversational AI",
       projectName: "Internal Knowledge Bot",
-      projectImageSrc: "/images/portfolio/work-3.jpg",
+      projectImageSrc: "/images/portfolio/conversational_ai.png",
       projectDescription:
         "A secure, scalable chatbot that accesses company documents and policies using RAG, streamlining employee onboarding and information access.",
     },
     {
       projectType: "Digital Transformation",
       projectName: "In‑house AI Platform",
-      projectImageSrc: "/images/portfolio/workflow.png",
+      projectImageSrc: "/images/portfolio/digital_transformation.png",
       projectDescription:
         "A centralized platform integrating RAG-based chatbots to automate workflows, streamline data retrieval, and improve decision‑making.",
     },
@@ -62,11 +62,11 @@ export default function Portfolio() {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+        <div className="flex overflow-x-auto gap-6 px-4 pb-8 snap-x snap-mandatory hide-scrollbar">
           {portfolio.map((item) => (
             <div
               key={item.projectName}
-              className="w-full"
+              className="w-[85vw] sm:w-[350px] lg:w-[400px] flex-shrink-0 snap-center"
             >
               <PortfolioInfo {...item} />
             </div>
