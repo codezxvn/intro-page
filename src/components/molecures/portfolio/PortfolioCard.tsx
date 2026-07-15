@@ -23,7 +23,7 @@ export default function PortfolioCard(info: PortfolioProps) {
         <span className="font-bold glass-chip w-fit sm:w-full">
           {info.projectType}
         </span>
-        <span className="w-full mt-4 glass p-4 rounded-xl text-white/90">{info.projectDescription}</span>
+        <span className="w-full mt-4 glass p-4 rounded-xl dark:text-white/90 text-black/90">{info.projectDescription}</span>
       </div>
     </div>
   );
