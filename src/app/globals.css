@@ -105,12 +105,12 @@ h6 {
 
 body {
   background: radial-gradient(
-      1200px 800px at 10% 10%,
+      150vw 150vh at 10% 10%,
       var(--bg-gradient-1),
       transparent 60%
     ),
     radial-gradient(
-      1000px 700px at 80% 0%,
+      120vw 120vh at 80% 0%,
       var(--bg-gradient-2),
       transparent 60%
     ),
@@ -171,17 +171,17 @@ body {
     z-index: -1;
     pointer-events: none;
     background: radial-gradient(
-        600px 400px at 20% 10%,
+        80vw 80vh at 20% 10%,
         var(--decor-1),
         transparent 60%
       ),
       radial-gradient(
-        700px 500px at 80% 20%,
+        90vw 90vh at 80% 20%,
         var(--decor-2),
         transparent 60%
       ),
       radial-gradient(
-        600px 600px at 30% 80%,
+        80vw 80vh at 30% 80%,
         var(--decor-3),
         transparent 60%
       );
