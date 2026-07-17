@@ -12,7 +12,7 @@ export default function About() {
   const welcomeInfo: WelComeProps = {
     heading: "About Us",
     body: (
-      <p className="text-justify leading-relaxed">We partner with teams to design, build, and scale products that matter. From VoIP and fintech to e‑commerce and data platforms, we bring deep expertise in Java/Spring, Python, React, Flutter, Kafka, Redis, Docker, and Kubernetes—plus hands‑on experience with Zero‑Trust, blockchain, and ML/AI.</p>
+      <p className="text-justify leading-relaxed">We partner with teams to design, build, and scale products that matter. From fintech to e‑commerce and data platforms, we bring deep expertise in Java/Spring, Python, React, Flutter, Kafka, Redis, Docker, and Kubernetes—plus hands‑on experience with Zero‑Trust, blockchain, and ML/AI.</p>
     ) as any,
   };
   return (
