@@ -16,9 +16,9 @@ export default function About() {
     ) as any,
   };
   return (
-    <section id="about" className="bg-primary text-secondary relative w-full pl-5">
-      <div className="max-w-screen-lg mx-auto mt-4 pr-2">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <section id="about" className="bg-primary text-secondary relative w-full">
+      <div className="max-w-screen-lg mx-auto mt-4 px-4 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
           <div>
             <Image
               src="/images/about.png"
